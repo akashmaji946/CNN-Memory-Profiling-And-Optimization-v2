@@ -2,8 +2,6 @@ imagenet-mini*
 .ml*
 .cnn
 *.pyc
-data
-data
 nsys
 *.nvidia-*
 projects
