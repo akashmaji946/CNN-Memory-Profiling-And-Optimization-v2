@@ -1,0 +1,645 @@
+(.ml2) akash@victus:~/Desktop/ML-2/Basic-Image-Classification$ ./sc.sh 
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                | 0/4344 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [21:59<00:00,  3.29it/s]
+Epoch 1 / 10 | Train Loss: 6.8882 | Train Acc: 0.0041 | Time: 1319.32s | Alloc: 71.20 MB | Reserved: 392.00 MB | Util: 18.00% | Mem Used: 855.12 MB | Peak Alloc: 362.59 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [25:01<00:00,  2.89it/s]
+Epoch 2 / 10 | Train Loss: 6.8197 | Train Acc: 0.0048 | Time: 1502.44s | Alloc: 71.20 MB | Reserved: 392.00 MB | Util: 82.00% | Mem Used: 855.12 MB | Peak Alloc: 361.12 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [22:59<00:00,  3.15it/s]
+Epoch 3 / 10 | Train Loss: 6.7292 | Train Acc: 0.0054 | Time: 1379.88s | Alloc: 71.20 MB | Reserved: 392.00 MB | Util: 81.00% | Mem Used: 855.12 MB | Peak Alloc: 362.56 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [21:59<00:00,  3.29it/s]
+Epoch 4 / 10 | Train Loss: 6.5970 | Train Acc: 0.0076 | Time: 1319.57s | Alloc: 71.20 MB | Reserved: 392.00 MB | Util: 84.00% | Mem Used: 855.12 MB | Peak Alloc: 361.12 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [21:47<00:00,  3.32it/s]
+Epoch 5 / 10 | Train Loss: 6.4579 | Train Acc: 0.0108 | Time: 1307.31s | Alloc: 71.20 MB | Reserved: 392.00 MB | Util: 87.00% | Mem Used: 855.12 MB | Peak Alloc: 362.56 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [22:02<00:00,  3.28it/s]
+Epoch 6 / 10 | Train Loss: 6.3051 | Train Acc: 0.0157 | Time: 1322.78s | Alloc: 71.20 MB | Reserved: 392.00 MB | Util: 85.00% | Mem Used: 855.12 MB | Peak Alloc: 361.12 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [22:25<00:00,  3.23it/s]
+Epoch 7 / 10 | Train Loss: 6.1884 | Train Acc: 0.0203 | Time: 1345.64s | Alloc: 71.20 MB | Reserved: 392.00 MB | Util: 86.00% | Mem Used: 855.12 MB | Peak Alloc: 362.56 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [22:23<00:00,  3.23it/s]
+Epoch 8 / 10 | Train Loss: 6.0979 | Train Acc: 0.0218 | Time: 1343.48s | Alloc: 71.20 MB | Reserved: 392.00 MB | Util: 87.00% | Mem Used: 855.12 MB | Peak Alloc: 361.12 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [22:32<00:00,  3.21it/s]
+Epoch 9 / 10 | Train Loss: 6.0212 | Train Acc: 0.0261 | Time: 1352.18s | Alloc: 71.20 MB | Reserved: 392.00 MB | Util: 85.00% | Mem Used: 855.12 MB | Peak Alloc: 362.56 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [22:30<00:00,  3.22it/s]
+Epoch 10 / 10 | Train Loss: 5.9569 | Train Acc: 0.0288 | Time: 1350.63s | Alloc: 71.20 MB | Reserved: 392.00 MB | Util: 84.00% | Mem Used: 855.12 MB | Peak Alloc: 361.12 MB
+Training complete!
+
+##########################################################################
+Batch Size: 8
+Tile Size: 8
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-8-ts-8.pth
+Total Inference Time: 29.7271 sec
+Test Accuracy: 3.08%
+Misprediction Rate: 96.92%
+Average Inference Time: 0.0605 sec
+Average Memory Allocated: 75.82 MB
+Average Memory Reserved: 392.00 MB
+Average GPU Utilization: 49.55%
+Average Memory Usage: 855.12 MB
+Average Peak Memory Allocated: 124.76 MB
+##########################################################################
+
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                | 0/4344 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [11:59<00:00,  6.03it/s]
+Epoch 1 / 10 | Train Loss: 6.8966 | Train Acc: 0.0037 | Time: 720.08s | Alloc: 71.20 MB | Reserved: 398.00 MB | Util: 83.00% | Mem Used: 861.12 MB | Peak Alloc: 365.92 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [10:57<00:00,  6.61it/s]
+Epoch 2 / 10 | Train Loss: 6.8490 | Train Acc: 0.0042 | Time: 657.59s | Alloc: 71.20 MB | Reserved: 398.00 MB | Util: 98.00% | Mem Used: 861.12 MB | Peak Alloc: 364.45 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [10:42<00:00,  6.76it/s]
+Epoch 3 / 10 | Train Loss: 6.7782 | Train Acc: 0.0045 | Time: 642.47s | Alloc: 71.20 MB | Reserved: 400.00 MB | Util: 98.00% | Mem Used: 863.12 MB | Peak Alloc: 365.89 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [10:36<00:00,  6.82it/s]
+Epoch 4 / 10 | Train Loss: 6.6465 | Train Acc: 0.0085 | Time: 637.03s | Alloc: 71.20 MB | Reserved: 402.00 MB | Util: 98.00% | Mem Used: 865.12 MB | Peak Alloc: 364.45 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [10:36<00:00,  6.83it/s]
+Epoch 5 / 10 | Train Loss: 6.4808 | Train Acc: 0.0121 | Time: 636.33s | Alloc: 71.20 MB | Reserved: 402.00 MB | Util: 98.00% | Mem Used: 865.12 MB | Peak Alloc: 365.89 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [10:35<00:00,  6.83it/s]
+Epoch 6 / 10 | Train Loss: 6.3245 | Train Acc: 0.0147 | Time: 635.71s | Alloc: 71.20 MB | Reserved: 402.00 MB | Util: 98.00% | Mem Used: 865.12 MB | Peak Alloc: 364.45 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [10:35<00:00,  6.83it/s]
+Epoch 7 / 10 | Train Loss: 6.2106 | Train Acc: 0.0200 | Time: 635.82s | Alloc: 71.20 MB | Reserved: 402.00 MB | Util: 98.00% | Mem Used: 865.12 MB | Peak Alloc: 365.89 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [10:35<00:00,  6.83it/s]
+Epoch 8 / 10 | Train Loss: 6.1192 | Train Acc: 0.0216 | Time: 635.78s | Alloc: 71.20 MB | Reserved: 402.00 MB | Util: 94.00% | Mem Used: 865.12 MB | Peak Alloc: 364.45 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [11:41<00:00,  6.19it/s]
+Epoch 9 / 10 | Train Loss: 6.0419 | Train Acc: 0.0253 | Time: 701.63s | Alloc: 71.20 MB | Reserved: 402.00 MB | Util: 84.00% | Mem Used: 865.12 MB | Peak Alloc: 365.89 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [11:25<00:00,  6.34it/s]
+Epoch 10 / 10 | Train Loss: 5.9786 | Train Acc: 0.0284 | Time: 685.86s | Alloc: 71.20 MB | Reserved: 402.00 MB | Util: 95.00% | Mem Used: 865.12 MB | Peak Alloc: 364.45 MB
+Training complete!
+##########################################################################
+Batch Size: 8
+Tile Size: 16
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-8-ts-16.pth
+Total Inference Time: 7.0823 sec
+Test Accuracy: 3.14%
+Misprediction Rate: 96.86%
+Average Inference Time: 0.0144 sec
+Average Memory Allocated: 75.82 MB
+Average Memory Reserved: 402.00 MB
+Average GPU Utilization: 90.37%
+Average Memory Usage: 865.12 MB
+Average Peak Memory Allocated: 124.76 MB
+##########################################################################
+
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                | 0/4344 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [07:03<00:00, 10.26it/s]
+Epoch 1 / 10 | Train Loss: 6.9018 | Train Acc: 0.0027 | Time: 423.46s | Alloc: 70.48 MB | Reserved: 418.00 MB | Util: 99.00% | Mem Used: 881.12 MB | Peak Alloc: 366.73 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [07:03<00:00, 10.26it/s]
+Epoch 2 / 10 | Train Loss: 6.8503 | Train Acc: 0.0039 | Time: 423.41s | Alloc: 68.86 MB | Reserved: 418.00 MB | Util: 99.00% | Mem Used: 881.12 MB | Peak Alloc: 365.13 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [07:05<00:00, 10.21it/s]
+Epoch 3 / 10 | Train Loss: 6.7779 | Train Acc: 0.0058 | Time: 425.74s | Alloc: 68.86 MB | Reserved: 418.00 MB | Util: 97.00% | Mem Used: 881.12 MB | Peak Alloc: 362.10 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [07:03<00:00, 10.26it/s]
+Epoch 4 / 10 | Train Loss: 6.6619 | Train Acc: 0.0069 | Time: 423.42s | Alloc: 68.86 MB | Reserved: 418.00 MB | Util: 99.00% | Mem Used: 881.12 MB | Peak Alloc: 362.10 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [07:01<00:00, 10.32it/s]
+Epoch 5 / 10 | Train Loss: 6.5033 | Train Acc: 0.0098 | Time: 421.25s | Alloc: 68.86 MB | Reserved: 418.00 MB | Util: 92.00% | Mem Used: 881.12 MB | Peak Alloc: 362.10 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [07:02<00:00, 10.28it/s]
+Epoch 6 / 10 | Train Loss: 6.3720 | Train Acc: 0.0146 | Time: 422.84s | Alloc: 68.86 MB | Reserved: 418.00 MB | Util: 99.00% | Mem Used: 881.12 MB | Peak Alloc: 362.10 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [07:01<00:00, 10.30it/s]
+Epoch 7 / 10 | Train Loss: 6.2654 | Train Acc: 0.0168 | Time: 422.01s | Alloc: 68.86 MB | Reserved: 418.00 MB | Util: 99.00% | Mem Used: 881.12 MB | Peak Alloc: 362.10 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [07:01<00:00, 10.30it/s]
+Epoch 8 / 10 | Train Loss: 6.1718 | Train Acc: 0.0220 | Time: 422.12s | Alloc: 68.86 MB | Reserved: 418.00 MB | Util: 99.00% | Mem Used: 881.12 MB | Peak Alloc: 362.10 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [06:58<00:00, 10.38it/s]
+Epoch 9 / 10 | Train Loss: 6.0885 | Train Acc: 0.0240 | Time: 418.83s | Alloc: 68.86 MB | Reserved: 418.00 MB | Util: 97.00% | Mem Used: 881.12 MB | Peak Alloc: 362.10 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [07:01<00:00, 10.31it/s]
+Epoch 10 / 10 | Train Loss: 6.0214 | Train Acc: 0.0260 | Time: 421.34s | Alloc: 68.86 MB | Reserved: 418.00 MB | Util: 98.00% | Mem Used: 881.12 MB | Peak Alloc: 362.10 MB
+Training complete!
+##########################################################################
+Batch Size: 8
+Tile Size: 32
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-8-ts-32.pth
+Total Inference Time: 2.7189 sec
+Test Accuracy: 2.09%
+Misprediction Rate: 97.91%
+Average Inference Time: 0.0055 sec
+Average Memory Allocated: 73.48 MB
+Average Memory Reserved: 418.00 MB
+Average GPU Utilization: 88.85%
+Average Memory Usage: 881.12 MB
+Average Peak Memory Allocated: 122.42 MB
+##########################################################################
+
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                | 0/4344 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [05:33<00:00, 13.02it/s]
+Epoch 1 / 10 | Train Loss: 6.9048 | Train Acc: 0.0033 | Time: 333.74s | Alloc: 69.76 MB | Reserved: 426.00 MB | Util: 99.00% | Mem Used: 889.12 MB | Peak Alloc: 357.48 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [05:33<00:00, 13.02it/s]
+Epoch 2 / 10 | Train Loss: 6.8655 | Train Acc: 0.0041 | Time: 333.91s | Alloc: 69.76 MB | Reserved: 426.00 MB | Util: 99.00% | Mem Used: 889.12 MB | Peak Alloc: 358.13 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [05:36<00:00, 12.90it/s]
+Epoch 3 / 10 | Train Loss: 6.8360 | Train Acc: 0.0043 | Time: 336.95s | Alloc: 69.76 MB | Reserved: 426.00 MB | Util: 99.00% | Mem Used: 889.12 MB | Peak Alloc: 358.98 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [05:37<00:00, 12.88it/s]
+Epoch 4 / 10 | Train Loss: 6.7819 | Train Acc: 0.0044 | Time: 337.41s | Alloc: 69.76 MB | Reserved: 426.00 MB | Util: 99.00% | Mem Used: 889.12 MB | Peak Alloc: 358.98 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [05:35<00:00, 12.95it/s]
+Epoch 5 / 10 | Train Loss: 6.6560 | Train Acc: 0.0068 | Time: 335.54s | Alloc: 69.76 MB | Reserved: 426.00 MB | Util: 99.00% | Mem Used: 889.12 MB | Peak Alloc: 358.98 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [05:36<00:00, 12.91it/s]
+Epoch 6 / 10 | Train Loss: 6.4959 | Train Acc: 0.0108 | Time: 336.77s | Alloc: 69.76 MB | Reserved: 426.00 MB | Util: 99.00% | Mem Used: 889.12 MB | Peak Alloc: 358.98 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [05:37<00:00, 12.87it/s]
+Epoch 7 / 10 | Train Loss: 6.3401 | Train Acc: 0.0137 | Time: 337.59s | Alloc: 69.76 MB | Reserved: 426.00 MB | Util: 99.00% | Mem Used: 889.12 MB | Peak Alloc: 358.98 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [05:35<00:00, 12.95it/s]
+Epoch 8 / 10 | Train Loss: 6.2104 | Train Acc: 0.0195 | Time: 335.68s | Alloc: 69.76 MB | Reserved: 426.00 MB | Util: 99.00% | Mem Used: 889.12 MB | Peak Alloc: 358.98 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [05:35<00:00, 12.95it/s]
+Epoch 9 / 10 | Train Loss: 6.1215 | Train Acc: 0.0209 | Time: 335.49s | Alloc: 69.76 MB | Reserved: 426.00 MB | Util: 99.00% | Mem Used: 889.12 MB | Peak Alloc: 358.98 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4344/4344 [05:39<00:00, 12.79it/s]
+Epoch 10 / 10 | Train Loss: 6.0298 | Train Acc: 0.0261 | Time: 339.71s | Alloc: 69.76 MB | Reserved: 426.00 MB | Util: 97.00% | Mem Used: 889.12 MB | Peak Alloc: 358.98 MB
+Training complete!
+##########################################################################
+Batch Size: 8
+Tile Size: 64
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-8-ts-64.pth
+Total Inference Time: 2.0673 sec
+Test Accuracy: 3.19%
+Misprediction Rate: 96.81%
+Average Inference Time: 0.0042 sec
+Average Memory Allocated: 75.16 MB
+Average Memory Reserved: 426.00 MB
+Average GPU Utilization: 85.64%
+Average Memory Usage: 889.12 MB
+Average Peak Memory Allocated: 124.10 MB
+##########################################################################
+
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                | 0/2172 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [17:48<00:00,  2.03it/s]
+Epoch 1 / 10 | Train Loss: 6.8808 | Train Acc: 0.0033 | Time: 1068.73s | Alloc: 72.72 MB | Reserved: 774.00 MB | Util: 92.00% | Mem Used: 1237.12 MB | Peak Alloc: 624.88 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [17:31<00:00,  2.07it/s]
+Epoch 2 / 10 | Train Loss: 6.7684 | Train Acc: 0.0058 | Time: 1051.24s | Alloc: 71.52 MB | Reserved: 776.00 MB | Util: 91.00% | Mem Used: 1239.12 MB | Peak Alloc: 624.82 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [17:14<00:00,  2.10it/s]
+Epoch 3 / 10 | Train Loss: 6.6756 | Train Acc: 0.0071 | Time: 1035.07s | Alloc: 71.87 MB | Reserved: 776.00 MB | Util: 93.00% | Mem Used: 1239.12 MB | Peak Alloc: 625.07 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [17:20<00:00,  2.09it/s]
+Epoch 4 / 10 | Train Loss: 6.5149 | Train Acc: 0.0100 | Time: 1040.87s | Alloc: 71.74 MB | Reserved: 776.00 MB | Util: 91.00% | Mem Used: 1239.12 MB | Peak Alloc: 623.76 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [17:39<00:00,  2.05it/s]
+Epoch 5 / 10 | Train Loss: 6.2950 | Train Acc: 0.0149 | Time: 1059.76s | Alloc: 72.55 MB | Reserved: 776.00 MB | Util: 93.00% | Mem Used: 1239.12 MB | Peak Alloc: 625.02 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [17:23<00:00,  2.08it/s]
+Epoch 6 / 10 | Train Loss: 6.0991 | Train Acc: 0.0211 | Time: 1043.78s | Alloc: 72.33 MB | Reserved: 776.00 MB | Util: 92.00% | Mem Used: 1239.12 MB | Peak Alloc: 624.82 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [17:21<00:00,  2.09it/s]
+Epoch 7 / 10 | Train Loss: 5.9618 | Train Acc: 0.0262 | Time: 1041.45s | Alloc: 72.33 MB | Reserved: 776.00 MB | Util: 93.00% | Mem Used: 1239.12 MB | Peak Alloc: 625.32 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [17:16<00:00,  2.09it/s]
+Epoch 8 / 10 | Train Loss: 5.8409 | Train Acc: 0.0332 | Time: 1037.17s | Alloc: 72.33 MB | Reserved: 776.00 MB | Util: 93.00% | Mem Used: 1239.12 MB | Peak Alloc: 625.32 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [17:20<00:00,  2.09it/s]
+Epoch 9 / 10 | Train Loss: 5.7493 | Train Acc: 0.0371 | Time: 1040.18s | Alloc: 72.33 MB | Reserved: 776.00 MB | Util: 92.00% | Mem Used: 1239.12 MB | Peak Alloc: 625.32 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [17:23<00:00,  2.08it/s]
+Epoch 10 / 10 | Train Loss: 5.6558 | Train Acc: 0.0435 | Time: 1043.20s | Alloc: 72.33 MB | Reserved: 776.00 MB | Util: 90.00% | Mem Used: 1239.12 MB | Peak Alloc: 625.32 MB
+Training complete!
+##########################################################################
+Batch Size: 16
+Tile Size: 8
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-16-ts-8.pth
+Total Inference Time: 9.5445 sec
+Test Accuracy: 4.69%
+Misprediction Rate: 95.31%
+Average Inference Time: 0.0388 sec
+Average Memory Allocated: 81.55 MB
+Average Memory Reserved: 776.00 MB
+Average GPU Utilization: 86.12%
+Average Memory Usage: 1239.12 MB
+Average Peak Memory Allocated: 181.22 MB
+##########################################################################
+
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                | 0/2172 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [08:37<00:00,  4.20it/s]
+Epoch 1 / 10 | Train Loss: 6.8601 | Train Acc: 0.0042 | Time: 517.81s | Alloc: 71.37 MB | Reserved: 850.00 MB | Util: 100.00% | Mem Used: 1313.12 MB | Peak Alloc: 635.49 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [08:36<00:00,  4.21it/s]
+Epoch 2 / 10 | Train Loss: 6.7424 | Train Acc: 0.0056 | Time: 516.57s | Alloc: 71.01 MB | Reserved: 850.00 MB | Util: 99.00% | Mem Used: 1313.12 MB | Peak Alloc: 635.91 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [08:37<00:00,  4.20it/s]
+Epoch 3 / 10 | Train Loss: 6.5976 | Train Acc: 0.0078 | Time: 517.40s | Alloc: 70.96 MB | Reserved: 850.00 MB | Util: 100.00% | Mem Used: 1313.12 MB | Peak Alloc: 635.43 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [08:34<00:00,  4.22it/s]
+Epoch 4 / 10 | Train Loss: 6.4289 | Train Acc: 0.0121 | Time: 515.09s | Alloc: 70.96 MB | Reserved: 850.00 MB | Util: 100.00% | Mem Used: 1313.12 MB | Peak Alloc: 636.08 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [08:33<00:00,  4.23it/s]
+Epoch 5 / 10 | Train Loss: 6.2545 | Train Acc: 0.0170 | Time: 513.50s | Alloc: 70.96 MB | Reserved: 850.00 MB | Util: 100.00% | Mem Used: 1313.12 MB | Peak Alloc: 636.08 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [08:32<00:00,  4.24it/s]
+Epoch 6 / 10 | Train Loss: 6.0817 | Train Acc: 0.0220 | Time: 513.00s | Alloc: 70.96 MB | Reserved: 850.00 MB | Util: 100.00% | Mem Used: 1313.12 MB | Peak Alloc: 636.08 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [08:32<00:00,  4.24it/s]
+Epoch 7 / 10 | Train Loss: 5.9570 | Train Acc: 0.0288 | Time: 512.91s | Alloc: 70.96 MB | Reserved: 850.00 MB | Util: 100.00% | Mem Used: 1313.12 MB | Peak Alloc: 636.08 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [08:33<00:00,  4.23it/s]
+Epoch 8 / 10 | Train Loss: 5.8471 | Train Acc: 0.0321 | Time: 513.34s | Alloc: 70.96 MB | Reserved: 850.00 MB | Util: 100.00% | Mem Used: 1313.12 MB | Peak Alloc: 636.08 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [08:32<00:00,  4.24it/s]
+Epoch 9 / 10 | Train Loss: 5.7508 | Train Acc: 0.0370 | Time: 512.37s | Alloc: 70.96 MB | Reserved: 850.00 MB | Util: 100.00% | Mem Used: 1313.12 MB | Peak Alloc: 636.08 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [08:34<00:00,  4.22it/s]
+Epoch 10 / 10 | Train Loss: 5.6689 | Train Acc: 0.0408 | Time: 514.68s | Alloc: 70.96 MB | Reserved: 850.00 MB | Util: 99.00% | Mem Used: 1313.12 MB | Peak Alloc: 636.08 MB
+Training complete!
+##########################################################################
+Batch Size: 16
+Tile Size: 16
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-16-ts-16.pth
+Total Inference Time: 3.6880 sec
+Test Accuracy: 4.36%
+Misprediction Rate: 95.64%
+Average Inference Time: 0.0150 sec
+Average Memory Allocated: 80.49 MB
+Average Memory Reserved: 850.00 MB
+Average GPU Utilization: 90.67%
+Average Memory Usage: 1313.12 MB
+Average Peak Memory Allocated: 180.16 MB
+##########################################################################
+
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                | 0/2172 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [05:23<00:00,  6.71it/s]
+Epoch 1 / 10 | Train Loss: 6.8740 | Train Acc: 0.0032 | Time: 323.99s | Alloc: 69.84 MB | Reserved: 780.00 MB | Util: 100.00% | Mem Used: 1243.12 MB | Peak Alloc: 616.71 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [05:23<00:00,  6.72it/s]
+Epoch 2 / 10 | Train Loss: 6.7416 | Train Acc: 0.0048 | Time: 323.37s | Alloc: 70.05 MB | Reserved: 780.00 MB | Util: 99.00% | Mem Used: 1243.12 MB | Peak Alloc: 616.52 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [05:23<00:00,  6.71it/s]
+Epoch 3 / 10 | Train Loss: 6.6255 | Train Acc: 0.0062 | Time: 323.92s | Alloc: 69.74 MB | Reserved: 780.00 MB | Util: 99.00% | Mem Used: 1243.12 MB | Peak Alloc: 616.87 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [05:23<00:00,  6.70it/s]
+Epoch 4 / 10 | Train Loss: 6.4741 | Train Acc: 0.0108 | Time: 324.16s | Alloc: 69.89 MB | Reserved: 780.00 MB | Util: 99.00% | Mem Used: 1243.12 MB | Peak Alloc: 616.87 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [05:24<00:00,  6.70it/s]
+Epoch 5 / 10 | Train Loss: 6.2957 | Train Acc: 0.0163 | Time: 324.22s | Alloc: 69.89 MB | Reserved: 780.00 MB | Util: 99.00% | Mem Used: 1243.12 MB | Peak Alloc: 616.87 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [05:24<00:00,  6.70it/s]
+Epoch 6 / 10 | Train Loss: 6.1334 | Train Acc: 0.0210 | Time: 324.36s | Alloc: 69.89 MB | Reserved: 780.00 MB | Util: 100.00% | Mem Used: 1243.12 MB | Peak Alloc: 616.87 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [05:24<00:00,  6.70it/s]
+Epoch 7 / 10 | Train Loss: 5.9986 | Train Acc: 0.0260 | Time: 324.46s | Alloc: 69.89 MB | Reserved: 780.00 MB | Util: 100.00% | Mem Used: 1243.12 MB | Peak Alloc: 616.87 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [05:25<00:00,  6.67it/s]
+Epoch 8 / 10 | Train Loss: 5.8667 | Train Acc: 0.0334 | Time: 325.65s | Alloc: 69.89 MB | Reserved: 780.00 MB | Util: 99.00% | Mem Used: 1243.12 MB | Peak Alloc: 616.87 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [05:26<00:00,  6.64it/s]
+Epoch 9 / 10 | Train Loss: 5.7649 | Train Acc: 0.0357 | Time: 327.12s | Alloc: 69.89 MB | Reserved: 780.00 MB | Util: 100.00% | Mem Used: 1243.12 MB | Peak Alloc: 616.87 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [05:24<00:00,  6.69it/s]
+Epoch 10 / 10 | Train Loss: 5.6722 | Train Acc: 0.0412 | Time: 324.66s | Alloc: 69.89 MB | Reserved: 780.00 MB | Util: 99.00% | Mem Used: 1243.12 MB | Peak Alloc: 616.87 MB
+Training complete!
+##########################################################################
+Batch Size: 16
+Tile Size: 32
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-16-ts-32.pth
+Total Inference Time: 1.5610 sec
+Test Accuracy: 4.18%
+Misprediction Rate: 95.82%
+Average Inference Time: 0.0063 sec
+Average Memory Allocated: 79.11 MB
+Average Memory Reserved: 780.00 MB
+Average GPU Utilization: 90.47%
+Average Memory Usage: 1243.12 MB
+Average Peak Memory Allocated: 178.78 MB
+##########################################################################
+
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                | 0/2172 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [04:25<00:00,  8.18it/s]
+Epoch 1 / 10 | Train Loss: 6.8722 | Train Acc: 0.0047 | Time: 265.47s | Alloc: 70.58 MB | Reserved: 720.00 MB | Util: 98.00% | Mem Used: 1183.12 MB | Peak Alloc: 612.59 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [04:24<00:00,  8.20it/s]
+Epoch 2 / 10 | Train Loss: 6.7487 | Train Acc: 0.0060 | Time: 264.92s | Alloc: 69.33 MB | Reserved: 720.00 MB | Util: 99.00% | Mem Used: 1183.12 MB | Peak Alloc: 611.95 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [04:56<00:00,  7.32it/s]
+Epoch 3 / 10 | Train Loss: 6.6072 | Train Acc: 0.0080 | Time: 297.04s | Alloc: 69.64 MB | Reserved: 720.00 MB | Util: 99.00% | Mem Used: 1277.12 MB | Peak Alloc: 610.06 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [04:55<00:00,  7.35it/s]
+Epoch 4 / 10 | Train Loss: 6.4364 | Train Acc: 0.0116 | Time: 295.60s | Alloc: 69.83 MB | Reserved: 720.00 MB | Util: 99.00% | Mem Used: 1183.12 MB | Peak Alloc: 609.84 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [04:52<00:00,  7.43it/s]
+Epoch 5 / 10 | Train Loss: 6.2747 | Train Acc: 0.0165 | Time: 292.54s | Alloc: 70.18 MB | Reserved: 720.00 MB | Util: 99.00% | Mem Used: 1183.12 MB | Peak Alloc: 609.90 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [04:54<00:00,  7.38it/s]
+Epoch 6 / 10 | Train Loss: 6.1201 | Train Acc: 0.0222 | Time: 294.46s | Alloc: 70.18 MB | Reserved: 720.00 MB | Util: 100.00% | Mem Used: 1277.12 MB | Peak Alloc: 610.04 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [04:59<00:00,  7.26it/s]
+Epoch 7 / 10 | Train Loss: 5.9823 | Train Acc: 0.0272 | Time: 299.24s | Alloc: 70.18 MB | Reserved: 720.00 MB | Util: 99.00% | Mem Used: 1183.12 MB | Peak Alloc: 610.04 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [04:44<00:00,  7.64it/s]
+Epoch 8 / 10 | Train Loss: 5.8621 | Train Acc: 0.0320 | Time: 284.51s | Alloc: 70.18 MB | Reserved: 720.00 MB | Util: 99.00% | Mem Used: 1183.12 MB | Peak Alloc: 610.04 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [05:13<00:00,  6.93it/s]
+Epoch 9 / 10 | Train Loss: 5.7574 | Train Acc: 0.0364 | Time: 313.57s | Alloc: 70.18 MB | Reserved: 720.00 MB | Util: 98.00% | Mem Used: 1281.12 MB | Peak Alloc: 610.04 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [05:33<00:00,  6.52it/s]
+Epoch 10 / 10 | Train Loss: 5.6633 | Train Acc: 0.0448 | Time: 333.26s | Alloc: 70.18 MB | Reserved: 720.00 MB | Util: 99.00% | Mem Used: 1183.12 MB | Peak Alloc: 610.04 MB
+Training complete!
+##########################################################################
+Batch Size: 16
+Tile Size: 64
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-16-ts-64.pth
+Total Inference Time: 1.0318 sec
+Test Accuracy: 4.26%
+Misprediction Rate: 95.74%
+Average Inference Time: 0.0042 sec
+Average Memory Allocated: 79.40 MB
+Average Memory Reserved: 720.00 MB
+Average GPU Utilization: 88.98%
+Average Memory Usage: 1183.12 MB
+Average Peak Memory Allocated: 243.84 MB
+##########################################################################
+
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                | 0/1086 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [18:10<00:00,  1.00s/it]
+Epoch 1 / 10 | Train Loss: 6.8645 | Train Acc: 0.0043 | Time: 1091.03s | Alloc: 69.48 MB | Reserved: 1598.00 MB | Util: 96.00% | Mem Used: 2061.12 MB | Peak Alloc: 1162.66 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [15:46<00:00,  1.15it/s]
+Epoch 2 / 10 | Train Loss: 6.6992 | Train Acc: 0.0071 | Time: 946.88s | Alloc: 69.48 MB | Reserved: 1598.00 MB | Util: 98.00% | Mem Used: 2061.12 MB | Peak Alloc: 1162.66 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [15:45<00:00,  1.15it/s]
+Epoch 3 / 10 | Train Loss: 6.5300 | Train Acc: 0.0096 | Time: 945.79s | Alloc: 69.48 MB | Reserved: 1598.00 MB | Util: 89.00% | Mem Used: 2061.12 MB | Peak Alloc: 1162.66 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [15:57<00:00,  1.13it/s]
+Epoch 4 / 10 | Train Loss: 6.3014 | Train Acc: 0.0153 | Time: 957.40s | Alloc: 69.48 MB | Reserved: 1598.00 MB | Util: 99.00% | Mem Used: 2155.12 MB | Peak Alloc: 1162.66 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [19:02<00:00,  1.05s/it]
+Epoch 5 / 10 | Train Loss: 6.0776 | Train Acc: 0.0218 | Time: 1142.77s | Alloc: 69.48 MB | Reserved: 1598.00 MB | Util: 99.00% | Mem Used: 2157.12 MB | Peak Alloc: 1162.66 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [16:52<00:00,  1.07it/s]
+Epoch 6 / 10 | Train Loss: 5.9008 | Train Acc: 0.0280 | Time: 1012.81s | Alloc: 69.48 MB | Reserved: 1598.00 MB | Util: 99.00% | Mem Used: 2061.12 MB | Peak Alloc: 1162.66 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [15:14<00:00,  1.19it/s]
+Epoch 7 / 10 | Train Loss: 5.7321 | Train Acc: 0.0384 | Time: 915.12s | Alloc: 69.48 MB | Reserved: 1598.00 MB | Util: 99.00% | Mem Used: 2061.12 MB | Peak Alloc: 1162.66 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [15:14<00:00,  1.19it/s]
+Epoch 8 / 10 | Train Loss: 5.5880 | Train Acc: 0.0456 | Time: 914.81s | Alloc: 69.48 MB | Reserved: 1598.00 MB | Util: 100.00% | Mem Used: 2061.12 MB | Peak Alloc: 1162.66 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [15:14<00:00,  1.19it/s]
+Epoch 9 / 10 | Train Loss: 5.4681 | Train Acc: 0.0526 | Time: 914.88s | Alloc: 69.48 MB | Reserved: 1598.00 MB | Util: 99.00% | Mem Used: 2061.12 MB | Peak Alloc: 1162.66 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [15:14<00:00,  1.19it/s]
+Epoch 10 / 10 | Train Loss: 5.3572 | Train Acc: 0.0610 | Time: 914.93s | Alloc: 69.48 MB | Reserved: 1598.00 MB | Util: 99.00% | Mem Used: 2061.12 MB | Peak Alloc: 1162.66 MB
+Training complete!
+##########################################################################
+Batch Size: 32
+Tile Size: 8
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-32-ts-8.pth
+Total Inference Time: 4.2838 sec
+Test Accuracy: 6.14%
+Misprediction Rate: 93.86%
+Average Inference Time: 0.0348 sec
+Average Memory Allocated: 88.68 MB
+Average Memory Reserved: 1598.00 MB
+Average GPU Utilization: 92.93%
+Average Memory Usage: 2061.12 MB
+Average Peak Memory Allocated: 284.03 MB
+##########################################################################
+
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                | 0/1086 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [08:04<00:00,  2.24it/s]
+Epoch 1 / 10 | Train Loss: 6.8780 | Train Acc: 0.0037 | Time: 484.49s | Alloc: 71.51 MB | Reserved: 1562.00 MB | Util: 100.00% | Mem Used: 2025.12 MB | Peak Alloc: 1188.73 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [08:03<00:00,  2.24it/s]
+Epoch 2 / 10 | Train Loss: 6.7273 | Train Acc: 0.0054 | Time: 484.06s | Alloc: 71.51 MB | Reserved: 1562.00 MB | Util: 100.00% | Mem Used: 2025.12 MB | Peak Alloc: 1188.73 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [08:04<00:00,  2.24it/s]
+Epoch 3 / 10 | Train Loss: 6.5679 | Train Acc: 0.0087 | Time: 484.17s | Alloc: 71.51 MB | Reserved: 1562.00 MB | Util: 100.00% | Mem Used: 2025.12 MB | Peak Alloc: 1188.73 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [08:04<00:00,  2.24it/s]
+Epoch 4 / 10 | Train Loss: 6.3252 | Train Acc: 0.0140 | Time: 484.58s | Alloc: 71.51 MB | Reserved: 1562.00 MB | Util: 100.00% | Mem Used: 2025.12 MB | Peak Alloc: 1188.73 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [08:04<00:00,  2.24it/s]
+Epoch 5 / 10 | Train Loss: 6.0965 | Train Acc: 0.0213 | Time: 484.51s | Alloc: 71.51 MB | Reserved: 1562.00 MB | Util: 100.00% | Mem Used: 2025.12 MB | Peak Alloc: 1188.73 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [08:04<00:00,  2.24it/s]
+Epoch 6 / 10 | Train Loss: 5.9070 | Train Acc: 0.0282 | Time: 484.62s | Alloc: 71.51 MB | Reserved: 1562.00 MB | Util: 100.00% | Mem Used: 2025.12 MB | Peak Alloc: 1188.73 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [08:04<00:00,  2.24it/s]
+Epoch 7 / 10 | Train Loss: 5.7546 | Train Acc: 0.0346 | Time: 484.67s | Alloc: 71.51 MB | Reserved: 1562.00 MB | Util: 100.00% | Mem Used: 2025.12 MB | Peak Alloc: 1188.73 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [08:04<00:00,  2.24it/s]
+Epoch 8 / 10 | Train Loss: 5.6216 | Train Acc: 0.0423 | Time: 484.58s | Alloc: 71.51 MB | Reserved: 1562.00 MB | Util: 100.00% | Mem Used: 2025.12 MB | Peak Alloc: 1188.73 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [08:04<00:00,  2.24it/s]
+Epoch 9 / 10 | Train Loss: 5.5043 | Train Acc: 0.0490 | Time: 484.69s | Alloc: 71.51 MB | Reserved: 1562.00 MB | Util: 100.00% | Mem Used: 2025.12 MB | Peak Alloc: 1188.73 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [08:04<00:00,  2.24it/s]
+Epoch 10 / 10 | Train Loss: 5.3890 | Train Acc: 0.0574 | Time: 484.51s | Alloc: 71.51 MB | Reserved: 1562.00 MB | Util: 100.00% | Mem Used: 2025.12 MB | Peak Alloc: 1188.73 MB
+Training complete!
+##########################################################################
+Batch Size: 32
+Tile Size: 16
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-32-ts-16.pth
+Total Inference Time: 1.4509 sec
+Test Accuracy: 5.30%
+Misprediction Rate: 94.70%
+Average Inference Time: 0.0118 sec
+Average Memory Allocated: 89.95 MB
+Average Memory Reserved: 1562.00 MB
+Average GPU Utilization: 91.18%
+Average Memory Usage: 2025.12 MB
+Average Peak Memory Allocated: 285.30 MB
+##########################################################################
+
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                | 0/1086 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [05:07<00:00,  3.53it/s]
+Epoch 1 / 10 | Train Loss: 6.8728 | Train Acc: 0.0041 | Time: 307.69s | Alloc: 70.77 MB | Reserved: 1516.00 MB | Util: 98.00% | Mem Used: 1979.12 MB | Peak Alloc: 1149.54 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [05:06<00:00,  3.54it/s]
+Epoch 2 / 10 | Train Loss: 6.7058 | Train Acc: 0.0067 | Time: 307.13s | Alloc: 70.77 MB | Reserved: 1516.00 MB | Util: 100.00% | Mem Used: 1979.12 MB | Peak Alloc: 1149.97 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [05:07<00:00,  3.54it/s]
+Epoch 3 / 10 | Train Loss: 6.5614 | Train Acc: 0.0084 | Time: 307.39s | Alloc: 70.77 MB | Reserved: 1516.00 MB | Util: 100.00% | Mem Used: 1979.12 MB | Peak Alloc: 1149.97 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [05:07<00:00,  3.54it/s]
+Epoch 4 / 10 | Train Loss: 6.3636 | Train Acc: 0.0136 | Time: 307.38s | Alloc: 70.77 MB | Reserved: 1516.00 MB | Util: 100.00% | Mem Used: 1979.12 MB | Peak Alloc: 1149.97 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [05:07<00:00,  3.53it/s]
+Epoch 5 / 10 | Train Loss: 6.1583 | Train Acc: 0.0199 | Time: 307.53s | Alloc: 70.77 MB | Reserved: 1516.00 MB | Util: 100.00% | Mem Used: 1979.12 MB | Peak Alloc: 1149.97 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [05:07<00:00,  3.53it/s]
+Epoch 6 / 10 | Train Loss: 5.9786 | Train Acc: 0.0247 | Time: 307.53s | Alloc: 70.77 MB | Reserved: 1516.00 MB | Util: 99.00% | Mem Used: 1979.12 MB | Peak Alloc: 1149.97 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [05:07<00:00,  3.53it/s]
+Epoch 7 / 10 | Train Loss: 5.8223 | Train Acc: 0.0306 | Time: 307.63s | Alloc: 70.77 MB | Reserved: 1516.00 MB | Util: 100.00% | Mem Used: 1979.12 MB | Peak Alloc: 1149.97 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [05:07<00:00,  3.53it/s]
+Epoch 8 / 10 | Train Loss: 5.6812 | Train Acc: 0.0381 | Time: 307.49s | Alloc: 70.77 MB | Reserved: 1516.00 MB | Util: 99.00% | Mem Used: 1979.12 MB | Peak Alloc: 1149.97 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [05:07<00:00,  3.53it/s]
+Epoch 9 / 10 | Train Loss: 5.5728 | Train Acc: 0.0467 | Time: 307.47s | Alloc: 70.77 MB | Reserved: 1516.00 MB | Util: 100.00% | Mem Used: 1979.12 MB | Peak Alloc: 1149.97 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [05:07<00:00,  3.53it/s]
+Epoch 10 / 10 | Train Loss: 5.4681 | Train Acc: 0.0541 | Time: 307.55s | Alloc: 70.77 MB | Reserved: 1516.00 MB | Util: 99.00% | Mem Used: 1979.12 MB | Peak Alloc: 1149.97 MB
+Training complete!
+##########################################################################
+Batch Size: 32
+Tile Size: 32
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-32-ts-32.pth
+Total Inference Time: 0.6249 sec
+Test Accuracy: 4.56%
+Misprediction Rate: 95.44%
+Average Inference Time: 0.0051 sec
+Average Memory Allocated: 89.21 MB
+Average Memory Reserved: 1516.00 MB
+Average GPU Utilization: 90.51%
+Average Memory Usage: 1979.12 MB
+Average Peak Memory Allocated: 284.56 MB
+##########################################################################
+
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                | 0/1086 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [04:11<00:00,  4.31it/s]
+Epoch 1 / 10 | Train Loss: 6.8380 | Train Acc: 0.0047 | Time: 252.09s | Alloc: 72.08 MB | Reserved: 1356.00 MB | Util: 100.00% | Mem Used: 1819.12 MB | Peak Alloc: 1136.57 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [04:11<00:00,  4.32it/s]
+Epoch 2 / 10 | Train Loss: 6.6150 | Train Acc: 0.0077 | Time: 251.58s | Alloc: 72.08 MB | Reserved: 1356.00 MB | Util: 97.00% | Mem Used: 1819.12 MB | Peak Alloc: 1137.97 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [04:11<00:00,  4.32it/s]
+Epoch 3 / 10 | Train Loss: 6.4656 | Train Acc: 0.0100 | Time: 251.72s | Alloc: 72.08 MB | Reserved: 1356.00 MB | Util: 100.00% | Mem Used: 1819.12 MB | Peak Alloc: 1137.97 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [04:11<00:00,  4.31it/s]
+Epoch 4 / 10 | Train Loss: 6.2851 | Train Acc: 0.0145 | Time: 251.88s | Alloc: 72.08 MB | Reserved: 1356.00 MB | Util: 100.00% | Mem Used: 1819.12 MB | Peak Alloc: 1137.97 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [04:11<00:00,  4.31it/s]
+Epoch 5 / 10 | Train Loss: 6.1059 | Train Acc: 0.0220 | Time: 251.98s | Alloc: 72.08 MB | Reserved: 1356.00 MB | Util: 100.00% | Mem Used: 1819.12 MB | Peak Alloc: 1137.97 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [04:11<00:00,  4.31it/s]
+Epoch 6 / 10 | Train Loss: 5.9214 | Train Acc: 0.0272 | Time: 251.90s | Alloc: 72.08 MB | Reserved: 1356.00 MB | Util: 100.00% | Mem Used: 1819.12 MB | Peak Alloc: 1137.97 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [04:11<00:00,  4.31it/s]
+Epoch 7 / 10 | Train Loss: 5.7738 | Train Acc: 0.0340 | Time: 251.95s | Alloc: 72.08 MB | Reserved: 1356.00 MB | Util: 100.00% | Mem Used: 1819.12 MB | Peak Alloc: 1137.97 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [04:11<00:00,  4.31it/s]
+Epoch 8 / 10 | Train Loss: 5.6445 | Train Acc: 0.0412 | Time: 251.96s | Alloc: 72.08 MB | Reserved: 1356.00 MB | Util: 100.00% | Mem Used: 1819.12 MB | Peak Alloc: 1137.97 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [04:11<00:00,  4.31it/s]
+Epoch 9 / 10 | Train Loss: 5.5231 | Train Acc: 0.0486 | Time: 251.88s | Alloc: 72.08 MB | Reserved: 1356.00 MB | Util: 100.00% | Mem Used: 1819.12 MB | Peak Alloc: 1137.97 MB
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [04:11<00:00,  4.31it/s]
+Epoch 10 / 10 | Train Loss: 5.4222 | Train Acc: 0.0547 | Time: 251.92s | Alloc: 72.08 MB | Reserved: 1356.00 MB | Util: 100.00% | Mem Used: 1819.12 MB | Peak Alloc: 1137.97 MB
+Training complete!
+##########################################################################
+Batch Size: 32
+Tile Size: 64
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-32-ts-64.pth
+Total Inference Time: 0.3770 sec
+Test Accuracy: 4.54%
+Misprediction Rate: 95.46%
+Average Inference Time: 0.0031 sec
+Average Memory Allocated: 90.52 MB
+Average Memory Reserved: 1356.00 MB
+Average GPU Utilization: 91.69%
+Average Memory Usage: 1819.12 MB
+Average Peak Memory Allocated: 418.84 MB
+##########################################################################
+
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                 | 0/543 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [14:52<00:00,  1.64s/it]
+Epoch 1 / 10 | Train Loss: 6.8442 | Train Acc: 0.0049 | Time: 892.36s | Alloc: 70.10 MB | Reserved: 2856.00 MB | Util: 99.00% | Mem Used: 3321.12 MB | Peak Alloc: 2256.04 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [14:51<00:00,  1.64s/it]
+Epoch 2 / 10 | Train Loss: 6.5464 | Train Acc: 0.0093 | Time: 891.49s | Alloc: 70.34 MB | Reserved: 2856.00 MB | Util: 100.00% | Mem Used: 3321.12 MB | Peak Alloc: 2256.42 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [14:51<00:00,  1.64s/it]
+Epoch 3 / 10 | Train Loss: 6.3125 | Train Acc: 0.0138 | Time: 891.64s | Alloc: 70.34 MB | Reserved: 2856.00 MB | Util: 100.00% | Mem Used: 3321.12 MB | Peak Alloc: 2256.54 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [14:51<00:00,  1.64s/it]
+Epoch 4 / 10 | Train Loss: 6.0976 | Train Acc: 0.0204 | Time: 891.98s | Alloc: 70.34 MB | Reserved: 2856.00 MB | Util: 96.00% | Mem Used: 3321.12 MB | Peak Alloc: 2256.54 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [14:51<00:00,  1.64s/it]
+Epoch 5 / 10 | Train Loss: 5.9110 | Train Acc: 0.0269 | Time: 891.88s | Alloc: 70.34 MB | Reserved: 2856.00 MB | Util: 97.00% | Mem Used: 3321.12 MB | Peak Alloc: 2256.54 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [14:51<00:00,  1.64s/it]
+Epoch 6 / 10 | Train Loss: 5.7461 | Train Acc: 0.0354 | Time: 891.87s | Alloc: 70.34 MB | Reserved: 2856.00 MB | Util: 100.00% | Mem Used: 3321.12 MB | Peak Alloc: 2256.54 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [14:51<00:00,  1.64s/it]
+Epoch 7 / 10 | Train Loss: 5.5779 | Train Acc: 0.0441 | Time: 891.79s | Alloc: 70.34 MB | Reserved: 2856.00 MB | Util: 100.00% | Mem Used: 3321.12 MB | Peak Alloc: 2256.54 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [14:51<00:00,  1.64s/it]
+Epoch 8 / 10 | Train Loss: 5.4375 | Train Acc: 0.0555 | Time: 892.04s | Alloc: 70.34 MB | Reserved: 2856.00 MB | Util: 100.00% | Mem Used: 3321.12 MB | Peak Alloc: 2256.54 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [14:51<00:00,  1.64s/it]
+Epoch 9 / 10 | Train Loss: 5.3096 | Train Acc: 0.0656 | Time: 891.88s | Alloc: 70.34 MB | Reserved: 2856.00 MB | Util: 100.00% | Mem Used: 3321.12 MB | Peak Alloc: 2256.54 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [14:51<00:00,  1.64s/it]
+Epoch 10 / 10 | Train Loss: 5.1775 | Train Acc: 0.0734 | Time: 891.89s | Alloc: 70.34 MB | Reserved: 2856.00 MB | Util: 100.00% | Mem Used: 3321.12 MB | Peak Alloc: 2256.54 MB
+Training complete!
+##########################################################################
+Batch Size: 64
+Tile Size: 8
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-64-ts-8.pth
+Total Inference Time: 3.9613 sec
+Test Accuracy: 5.89%
+Misprediction Rate: 94.11%
+Average Inference Time: 0.0639 sec
+Average Memory Allocated: 106.91 MB
+Average Memory Reserved: 2856.00 MB
+Average GPU Utilization: 90.58%
+Average Memory Usage: 3321.12 MB
+Average Peak Memory Allocated: 494.47 MB
+##########################################################################
+
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                 | 0/543 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [07:53<00:00,  1.15it/s]
+Epoch 1 / 10 | Train Loss: 6.8542 | Train Acc: 0.0035 | Time: 473.30s | Alloc: 73.50 MB | Reserved: 2934.00 MB | Util: 100.00% | Mem Used: 3399.12 MB | Peak Alloc: 2280.79 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [07:52<00:00,  1.15it/s]
+Epoch 2 / 10 | Train Loss: 6.6550 | Train Acc: 0.0073 | Time: 472.41s | Alloc: 73.50 MB | Reserved: 2934.00 MB | Util: 100.00% | Mem Used: 3399.12 MB | Peak Alloc: 2283.78 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [07:52<00:00,  1.15it/s]
+Epoch 3 / 10 | Train Loss: 6.4601 | Train Acc: 0.0112 | Time: 472.57s | Alloc: 73.50 MB | Reserved: 2934.00 MB | Util: 100.00% | Mem Used: 3399.12 MB | Peak Alloc: 2283.78 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [07:52<00:00,  1.15it/s]
+Epoch 4 / 10 | Train Loss: 6.2465 | Train Acc: 0.0160 | Time: 472.64s | Alloc: 73.50 MB | Reserved: 2934.00 MB | Util: 100.00% | Mem Used: 3399.12 MB | Peak Alloc: 2283.78 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [07:52<00:00,  1.15it/s]
+Epoch 5 / 10 | Train Loss: 6.0373 | Train Acc: 0.0228 | Time: 472.60s | Alloc: 73.50 MB | Reserved: 2934.00 MB | Util: 100.00% | Mem Used: 3399.12 MB | Peak Alloc: 2283.78 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [07:54<00:00,  1.15it/s]
+Epoch 6 / 10 | Train Loss: 5.8639 | Train Acc: 0.0302 | Time: 474.39s | Alloc: 73.50 MB | Reserved: 2934.00 MB | Util: 100.00% | Mem Used: 3399.12 MB | Peak Alloc: 2283.78 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [08:00<00:00,  1.13it/s]
+Epoch 7 / 10 | Train Loss: 5.7091 | Train Acc: 0.0383 | Time: 480.28s | Alloc: 73.50 MB | Reserved: 2934.00 MB | Util: 100.00% | Mem Used: 3399.12 MB | Peak Alloc: 2283.78 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [08:05<00:00,  1.12it/s]
+Epoch 8 / 10 | Train Loss: 5.5704 | Train Acc: 0.0449 | Time: 486.04s | Alloc: 73.50 MB | Reserved: 2934.00 MB | Util: 100.00% | Mem Used: 3399.12 MB | Peak Alloc: 2283.78 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [08:05<00:00,  1.12it/s]
+Epoch 9 / 10 | Train Loss: 5.4474 | Train Acc: 0.0517 | Time: 485.79s | Alloc: 73.50 MB | Reserved: 2934.00 MB | Util: 100.00% | Mem Used: 3399.12 MB | Peak Alloc: 2283.78 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [08:07<00:00,  1.11it/s]
+Epoch 10 / 10 | Train Loss: 5.3330 | Train Acc: 0.0615 | Time: 487.80s | Alloc: 73.50 MB | Reserved: 2934.00 MB | Util: 100.00% | Mem Used: 3399.12 MB | Peak Alloc: 2283.78 MB
+Training complete!
+##########################################################################
+Batch Size: 64
+Tile Size: 16
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-64-ts-16.pth
+Total Inference Time: 1.1153 sec
+Test Accuracy: 5.17%
+Misprediction Rate: 94.83%
+Average Inference Time: 0.0180 sec
+Average Memory Allocated: 110.08 MB
+Average Memory Reserved: 2934.00 MB
+Average GPU Utilization: 89.52%
+Average Memory Usage: 3435.54 MB
+Average Peak Memory Allocated: 497.63 MB
+##########################################################################
+
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                 | 0/543 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [06:10<00:00,  1.47it/s]
+Epoch 1 / 10 | Train Loss: 6.8463 | Train Acc: 0.0039 | Time: 370.49s | Alloc: 70.37 MB | Reserved: 2858.00 MB | Util: 100.00% | Mem Used: 3323.12 MB | Peak Alloc: 2215.60 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [05:45<00:00,  1.57it/s]
+Epoch 2 / 10 | Train Loss: 6.6227 | Train Acc: 0.0075 | Time: 345.99s | Alloc: 70.37 MB | Reserved: 2860.00 MB | Util: 100.00% | Mem Used: 3443.12 MB | Peak Alloc: 2215.41 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [05:21<00:00,  1.69it/s]
+Epoch 3 / 10 | Train Loss: 6.4300 | Train Acc: 0.0116 | Time: 321.23s | Alloc: 70.37 MB | Reserved: 2860.00 MB | Util: 100.00% | Mem Used: 3325.12 MB | Peak Alloc: 2215.41 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [05:16<00:00,  1.72it/s]
+Epoch 4 / 10 | Train Loss: 6.2055 | Train Acc: 0.0171 | Time: 316.27s | Alloc: 70.37 MB | Reserved: 2860.00 MB | Util: 100.00% | Mem Used: 3325.12 MB | Peak Alloc: 2215.41 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [06:28<00:00,  1.40it/s]
+Epoch 5 / 10 | Train Loss: 6.0150 | Train Acc: 0.0233 | Time: 388.72s | Alloc: 70.37 MB | Reserved: 2860.00 MB | Util: 99.00% | Mem Used: 3425.12 MB | Peak Alloc: 2215.41 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [06:31<00:00,  1.39it/s]
+Epoch 6 / 10 | Train Loss: 5.8333 | Train Acc: 0.0318 | Time: 391.50s | Alloc: 70.37 MB | Reserved: 2860.00 MB | Util: 100.00% | Mem Used: 3423.12 MB | Peak Alloc: 2215.41 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [07:23<00:00,  1.22it/s]
+Epoch 7 / 10 | Train Loss: 5.6825 | Train Acc: 0.0390 | Time: 443.85s | Alloc: 70.37 MB | Reserved: 2860.00 MB | Util: 100.00% | Mem Used: 3423.12 MB | Peak Alloc: 2215.41 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [07:37<00:00,  1.19it/s]
+Epoch 8 / 10 | Train Loss: 5.5450 | Train Acc: 0.0461 | Time: 457.43s | Alloc: 70.37 MB | Reserved: 2860.00 MB | Util: 100.00% | Mem Used: 3423.12 MB | Peak Alloc: 2215.41 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [07:29<00:00,  1.21it/s]
+Epoch 9 / 10 | Train Loss: 5.4117 | Train Acc: 0.0574 | Time: 449.85s | Alloc: 70.37 MB | Reserved: 2860.00 MB | Util: 100.00% | Mem Used: 3465.12 MB | Peak Alloc: 2215.41 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [06:09<00:00,  1.47it/s]
+Epoch 10 / 10 | Train Loss: 5.2974 | Train Acc: 0.0655 | Time: 369.95s | Alloc: 70.37 MB | Reserved: 2860.00 MB | Util: 99.00% | Mem Used: 3325.12 MB | Peak Alloc: 2215.41 MB
+Training complete!
+##########################################################################
+Batch Size: 64
+Tile Size: 32
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-64-ts-32.pth
+Total Inference Time: 0.5175 sec
+Test Accuracy: 5.53%
+Misprediction Rate: 94.47%
+Average Inference Time: 0.0083 sec
+Average Memory Allocated: 106.94 MB
+Average Memory Reserved: 2860.00 MB
+Average GPU Utilization: 88.10%
+Average Memory Usage: 3325.12 MB
+Average Peak Memory Allocated: 494.49 MB
+##########################################################################
+
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                 | 0/543 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [04:22<00:00,  2.07it/s]
+Epoch 1 / 10 | Train Loss: 6.8390 | Train Acc: 0.0056 | Time: 262.99s | Alloc: 70.73 MB | Reserved: 2392.00 MB | Util: 99.00% | Mem Used: 2857.12 MB | Peak Alloc: 2191.04 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [04:22<00:00,  2.07it/s]
+Epoch 2 / 10 | Train Loss: 6.5770 | Train Acc: 0.0081 | Time: 262.67s | Alloc: 70.86 MB | Reserved: 2394.00 MB | Util: 100.00% | Mem Used: 2859.12 MB | Peak Alloc: 2191.06 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [04:22<00:00,  2.07it/s]
+Epoch 3 / 10 | Train Loss: 6.4178 | Train Acc: 0.0115 | Time: 262.62s | Alloc: 70.86 MB | Reserved: 2394.00 MB | Util: 100.00% | Mem Used: 2859.12 MB | Peak Alloc: 2191.20 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [04:22<00:00,  2.07it/s]
+Epoch 4 / 10 | Train Loss: 6.2382 | Train Acc: 0.0163 | Time: 262.42s | Alloc: 70.86 MB | Reserved: 2394.00 MB | Util: 100.00% | Mem Used: 2859.12 MB | Peak Alloc: 2191.20 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [04:22<00:00,  2.07it/s]
+Epoch 5 / 10 | Train Loss: 6.0546 | Train Acc: 0.0223 | Time: 262.92s | Alloc: 70.86 MB | Reserved: 2394.00 MB | Util: 96.00% | Mem Used: 2859.12 MB | Peak Alloc: 2191.20 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [04:22<00:00,  2.07it/s]
+Epoch 6 / 10 | Train Loss: 5.9006 | Train Acc: 0.0281 | Time: 262.28s | Alloc: 70.86 MB | Reserved: 2394.00 MB | Util: 100.00% | Mem Used: 2859.12 MB | Peak Alloc: 2191.20 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [04:22<00:00,  2.07it/s]
+Epoch 7 / 10 | Train Loss: 5.7436 | Train Acc: 0.0361 | Time: 262.24s | Alloc: 70.86 MB | Reserved: 2394.00 MB | Util: 100.00% | Mem Used: 2859.12 MB | Peak Alloc: 2191.20 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [04:22<00:00,  2.07it/s]
+Epoch 8 / 10 | Train Loss: 5.5890 | Train Acc: 0.0446 | Time: 262.32s | Alloc: 70.86 MB | Reserved: 2394.00 MB | Util: 100.00% | Mem Used: 2859.12 MB | Peak Alloc: 2191.20 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [04:21<00:00,  2.07it/s]
+Epoch 9 / 10 | Train Loss: 5.4499 | Train Acc: 0.0528 | Time: 261.97s | Alloc: 70.86 MB | Reserved: 2394.00 MB | Util: 100.00% | Mem Used: 2859.12 MB | Peak Alloc: 2191.20 MB
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [04:21<00:00,  2.08it/s]
+Epoch 10 / 10 | Train Loss: 5.3341 | Train Acc: 0.0596 | Time: 261.64s | Alloc: 70.86 MB | Reserved: 2394.00 MB | Util: 100.00% | Mem Used: 2859.12 MB | Peak Alloc: 2191.20 MB
+Training complete!
+##########################################################################
+Batch Size: 64
+Tile Size: 64
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-64-ts-64.pth
+Total Inference Time: 0.3059 sec
+Test Accuracy: 4.74%
+Misprediction Rate: 95.26%
+Average Inference Time: 0.0049 sec
+Average Memory Allocated: 107.43 MB
+Average Memory Reserved: 2394.00 MB
+Average GPU Utilization: 90.37%
+Average Memory Usage: 2859.12 MB
+Average Peak Memory Allocated: 756.82 MB
+##########################################################################
+
+(.ml2) akash@victus:~/Desktop/ML-2/Basic-Image-Classification$ 
+(.ml2) akash@victus:~/Desktop/ML-2/Basic-Image-Classification$ 
+

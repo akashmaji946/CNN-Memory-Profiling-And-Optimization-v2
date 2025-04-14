@@ -1,0 +1,124 @@
+Generating SQLite file profiles/v9-cifar10-resnet-32_bs256.sqlite from profiles/v9-cifar10-resnet-32_bs256.nsys-rep
+Processing [profiles/v9-cifar10-resnet-32_bs256.sqlite] with [/opt/nvidia/nsight-systems/2024.5.1/host-linux-x64/reports/nvtx_sum.py]... 
+SKIPPED: profiles/v9-cifar10-resnet-32_bs256.sqlite does not contain NV Tools Extension (NVTX) data.
+
+Processing [profiles/v9-cifar10-resnet-32_bs256.sqlite] with [/opt/nvidia/nsight-systems/2024.5.1/host-linux-x64/reports/osrt_sum.py]... 
+SKIPPED: profiles/v9-cifar10-resnet-32_bs256.sqlite does not contain OS Runtime trace data.
+
+Processing [profiles/v9-cifar10-resnet-32_bs256.sqlite] with [/opt/nvidia/nsight-systems/2024.5.1/host-linux-x64/reports/cuda_api_sum.py]... 
+
+ ** CUDA API Summary (cuda_api_sum):
+
+ Time (%)  Total Time (ns)  Num Calls    Avg (ns)       Med (ns)     Min (ns)   Max (ns)    StdDev (ns)               Name             
+ --------  ---------------  ---------  -------------  -------------  --------  -----------  -----------  ------------------------------
+     85.8   1,08,65,88,700         40  2,71,64,717.5  2,81,78,274.5     6,021  3,34,74,561  64,61,814.3  cudaDeviceSynchronize         
+     10.3     13,01,79,449      8,020       16,231.9        4,448.0     2,615  1,85,94,129   3,41,056.6  cudaLaunchKernel              
+      1.9      2,45,76,205        777       31,629.6        9,568.0       611     4,86,053   1,03,760.9  cudaStreamSynchronize         
+      0.6        77,15,558        777        9,929.9        6,463.0     2,525       47,802      7,347.9  cudaMemcpyAsync               
+      0.5        65,85,721          8     8,23,215.1       17,428.5     6,783    26,08,086  11,81,627.9  cudaHostAlloc                 
+      0.3        32,81,633      2,485        1,320.6        1,242.0       390       13,296        466.9  cudaEventRecord               
+      0.2        28,42,906          7     4,06,129.4     1,79,204.0    32,403    18,05,525   6,31,422.1  cuLibraryUnload               
+      0.1        14,03,204          2     7,01,602.0     7,01,602.0       672    14,02,532   9,91,264.7  cudaFree                      
+      0.1        13,96,410         14       99,743.6       95,252.5     2,535     1,95,535     55,368.1  cudaMalloc                    
+      0.1         9,41,445      2,490          378.1          351.0       291        5,321        161.9  cudaStreamIsCapturing_v10000  
+      0.0         4,11,462      2,037          202.0          180.0        60        6,653        219.7  cuGetProcAddress_v2           
+      0.0         1,87,421        871          215.2          171.0       150       11,211        519.0  cudaMemsetAsync               
+      0.0         1,46,300         16        9,143.8        1,869.0     1,553     1,02,035     25,100.6  cudaStreamCreateWithFlags     
+      0.0           15,289         19          804.7          280.0       220        5,010      1,202.3  cudaEventCreateWithFlags      
+      0.0            9,980          6        1,663.3        1,688.0       892        2,475        572.1  cuInit                        
+      0.0            7,706          8          963.3          631.0       581        2,515        684.1  cudaStreamWaitEvent           
+      0.0            1,423          6          237.2          160.5       110          661        211.1  cuModuleGetLoadingMode        
+      0.0              620          2          310.0          310.0       200          420        155.6  cudaGetDriverEntryPoint_v11030
+
+Processing [profiles/v9-cifar10-resnet-32_bs256.sqlite] with [/opt/nvidia/nsight-systems/2024.5.1/host-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
+ Time (%)  Total Time (ns)  Instances   Avg (ns)    Med (ns)   Min (ns)  Max (ns)   StdDev (ns)                                                  Name                                                
+ --------  ---------------  ---------  ----------  ----------  --------  ---------  -----------  ----------------------------------------------------------------------------------------------------
+     45.7     58,66,94,961        831  7,06,010.8  6,33,833.0    24,288  11,81,617   2,71,603.5  _5x_cudnn_volta_scudnn_128x32_relu_small_nn_v1                                                      
+     12.0     15,34,63,372      1,240  1,23,760.8    99,554.0     4,320   2,36,899     64,700.8  void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float, (bool)1, (int)1>(T2, T2, cudnnTensorStruct, co…
+     11.7     14,95,03,490      1,240  1,20,567.3  1,01,905.5     3,776   2,33,475     65,965.7  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::n…
+     11.0     14,08,61,436      1,240  1,13,597.9    97,793.0     1,888   1,95,267     62,618.8  void at::native::vectorized_elementwise_kernel<(int)4, at::native::<unnamed>::launch_clamp_scalar(a…
+      7.6      9,78,47,758        600  1,63,079.6  1,43,522.0     2,752   2,86,244     90,773.1  void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, std::arr…
+      4.2      5,32,57,688        369  1,44,329.8  1,44,930.0    15,233   1,81,155     29,764.7  volta_sgemm_64x64_nn                                                                                
+      2.6      3,35,96,589        369    91,047.7    92,481.0     6,560   1,11,618     19,422.3  void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::Winog…
+      2.2      2,79,12,897        369    75,644.7    79,041.0     6,304     80,449     15,346.8  void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused::Win…
+      1.5      1,97,50,632        120  1,64,588.6  1,76,290.5    10,208   2,46,788     47,999.2  void at::native::<unnamed>::avg_pool2d_out_cuda_frame<float, float>(int, const T1 *, long, long, lo…
+      0.8      1,02,65,659         39  2,63,222.0  2,54,820.0  2,51,139   3,17,348     19,206.3  _5x_cudnn_volta_scudnn_128x64_relu_xregs_large_nn_v1                                                
+      0.2        30,68,650         80    38,358.1    29,649.0     2,496     56,321     13,417.3  void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::n…
+      0.2        26,17,100         80    32,713.8    23,008.0     1,888     45,536     12,172.0  void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<float>, std::array<c…
+      0.1        18,21,659        369     4,936.7     4,960.0     2,944      5,792        405.4  void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused::Win…
+      0.1        16,17,010        870     1,858.6     1,824.0     1,376      2,336        124.7  void cask__5x_cudnn::computeOffsetsKernel<(bool)0, (bool)0>(cask__5x_cudnn::ComputeOffsetsParams)   
+      0.0         2,84,264         39     7,288.8     7,137.0     6,880      8,544        439.2  volta_sgemm_32x128_tn                                                                               
+      0.0         2,44,932         40     6,123.3     6,064.0     4,864      7,072        362.3  void at::native::reduce_kernel<(int)512, (int)1, at::native::ReduceOp<float, at::native::MaxOps<flo…
+      0.0         1,51,360         40     3,784.0     3,712.0     3,168      4,512        232.0  void at::native::reduce_kernel<(int)512, (int)1, at::native::ReduceOp<long, at::native::func_wrappe…
+      0.0           89,313          2    44,656.5    44,656.5    41,792     47,521      4,051.0  void implicit_convolve_sgemm<float, float, (int)128, (int)6, (int)7, (int)3, (int)3, (int)5, (int)1…
+      0.0           81,761         40     2,044.0     1,984.0     1,920      2,497        152.6  void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIterator…
+      0.0           51,743         40     1,293.6     1,264.0     1,216      1,536         84.4  void at::native::vectorized_elementwise_kernel<(int)4, at::native::BinaryFunctor<long, long, bool, …
+      0.0           38,657          1    38,657.0    38,657.0    38,657     38,657          0.0  void precomputed_convolve_sgemm<float, (int)1024, (int)5, (int)5, (int)4, (int)3, (int)3, (int)1, (…
+      0.0            2,560          1     2,560.0     2,560.0     2,560      2,560          0.0  void gemmSN_TN_kernel<float, (int)128, (int)16, (int)2, (int)4, (int)8, (int)9, (bool)0, cublasGemv…
+      0.0            1,280          1     1,280.0     1,280.0     1,280      1,280          0.0  void cudnn::cnn::kern_precompute_indices<(bool)0>(int *, int, int, int, int, int)                   
+
+Processing [profiles/v9-cifar10-resnet-32_bs256.sqlite] with [/opt/nvidia/nsight-systems/2024.5.1/host-linux-x64/reports/cuda_gpu_mem_time_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Time) (cuda_gpu_mem_time_sum):
+
+ Time (%)  Total Time (ns)  Count  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)           Operation          
+ --------  ---------------  -----  --------  --------  --------  --------  -----------  ----------------------------
+     96.2      1,91,74,145    518  37,015.7     352.0       288  4,76,647   1,24,625.2  [CUDA memcpy Host-to-Device]
+      3.8         7,53,904    259   2,910.8   1,920.0       672    23,329      4,009.9  [CUDA memcpy Device-to-Host]
+      0.0              737      1     737.0     737.0       737       737          0.0  [CUDA memset]               
+
+Processing [profiles/v9-cifar10-resnet-32_bs256.sqlite] with [/opt/nvidia/nsight-systems/2024.5.1/host-linux-x64/reports/cuda_gpu_mem_size_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Size) (cuda_gpu_mem_size_sum):
+
+ Total (MB)  Count  Avg (MB)  Med (MB)  Min (MB)  Max (MB)  StdDev (MB)           Operation          
+ ----------  -----  --------  --------  --------  --------  -----------  ----------------------------
+    126.701    518     0.245     0.000     0.000     3.146        0.829  [CUDA memcpy Host-to-Device]
+      1.871    259     0.007     0.000     0.000     0.147        0.028  [CUDA memcpy Device-to-Host]
+      0.003      1     0.003     0.003     0.003     0.003        0.000  [CUDA memset]               
+
+Processing [profiles/v9-cifar10-resnet-32_bs256.sqlite] with [/opt/nvidia/nsight-systems/2024.5.1/host-linux-x64/reports/openmp_sum.py]... 
+SKIPPED: profiles/v9-cifar10-resnet-32_bs256.sqlite does not contain OpenMP event data.
+
+Processing [profiles/v9-cifar10-resnet-32_bs256.sqlite] with [/opt/nvidia/nsight-systems/2024.5.1/host-linux-x64/reports/opengl_khr_range_sum.py]... 
+SKIPPED: profiles/v9-cifar10-resnet-32_bs256.sqlite does not contain KHR Extension (KHR_DEBUG) data.
+
+Processing [profiles/v9-cifar10-resnet-32_bs256.sqlite] with [/opt/nvidia/nsight-systems/2024.5.1/host-linux-x64/reports/opengl_khr_gpu_range_sum.py]... 
+SKIPPED: profiles/v9-cifar10-resnet-32_bs256.sqlite does not contain GPU KHR Extension (KHR_DEBUG) data.
+
+Processing [profiles/v9-cifar10-resnet-32_bs256.sqlite] with [/opt/nvidia/nsight-systems/2024.5.1/host-linux-x64/reports/vulkan_marker_sum.py]... 
+SKIPPED: profiles/v9-cifar10-resnet-32_bs256.sqlite does not contain Vulkan Debug Extension (Vulkan Debug Util) data.
+
+Processing [profiles/v9-cifar10-resnet-32_bs256.sqlite] with [/opt/nvidia/nsight-systems/2024.5.1/host-linux-x64/reports/vulkan_gpu_marker_sum.py]... 
+SKIPPED: profiles/v9-cifar10-resnet-32_bs256.sqlite does not contain GPU Vulkan Debug Extension (GPU Vulkan Debug markers) data.
+
+Processing [profiles/v9-cifar10-resnet-32_bs256.sqlite] with [/opt/nvidia/nsight-systems/2024.5.1/host-linux-x64/reports/dx11_pix_sum.py]... 
+SKIPPED: profiles/v9-cifar10-resnet-32_bs256.sqlite does not contain DX11 CPU debug markers.
+
+Processing [profiles/v9-cifar10-resnet-32_bs256.sqlite] with [/opt/nvidia/nsight-systems/2024.5.1/host-linux-x64/reports/dx12_gpu_marker_sum.py]... 
+SKIPPED: profiles/v9-cifar10-resnet-32_bs256.sqlite does not contain DX12 GPU debug markers.
+
+Processing [profiles/v9-cifar10-resnet-32_bs256.sqlite] with [/opt/nvidia/nsight-systems/2024.5.1/host-linux-x64/reports/dx12_pix_sum.py]... 
+SKIPPED: profiles/v9-cifar10-resnet-32_bs256.sqlite does not contain DX12 CPU debug markers.
+
+Processing [profiles/v9-cifar10-resnet-32_bs256.sqlite] with [/opt/nvidia/nsight-systems/2024.5.1/host-linux-x64/reports/wddm_queue_sum.py]... 
+SKIPPED: profiles/v9-cifar10-resnet-32_bs256.sqlite does not contain WDDM context data.
+
+Processing [profiles/v9-cifar10-resnet-32_bs256.sqlite] with [/opt/nvidia/nsight-systems/2024.5.1/host-linux-x64/reports/um_sum.py]... 
+SKIPPED: profiles/v9-cifar10-resnet-32_bs256.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [profiles/v9-cifar10-resnet-32_bs256.sqlite] with [/opt/nvidia/nsight-systems/2024.5.1/host-linux-x64/reports/um_total_sum.py]... 
+SKIPPED: profiles/v9-cifar10-resnet-32_bs256.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [profiles/v9-cifar10-resnet-32_bs256.sqlite] with [/opt/nvidia/nsight-systems/2024.5.1/host-linux-x64/reports/um_cpu_page_faults_sum.py]... 
+SKIPPED: profiles/v9-cifar10-resnet-32_bs256.sqlite does not contain CUDA Unified Memory CPU page faults data.
+
+Processing [profiles/v9-cifar10-resnet-32_bs256.sqlite] with [/opt/nvidia/nsight-systems/2024.5.1/host-linux-x64/reports/openacc_sum.py]... 
+SKIPPED: profiles/v9-cifar10-resnet-32_bs256.sqlite does not contain OpenACC event data.
+
+Processing [profiles/v9-cifar10-resnet-32_bs256.sqlite] with [/opt/nvidia/nsight-systems/2024.5.1/host-linux-x64/reports/syscall_sum.py]... 
+SKIPPED: profiles/v9-cifar10-resnet-32_bs256.sqlite does not contain syscall data.
+

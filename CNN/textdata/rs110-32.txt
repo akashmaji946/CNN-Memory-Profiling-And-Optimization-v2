@@ -1,0 +1,189 @@
+(.ml2) akash@victus:~/Desktop/ML-2/Basic-Image-Classification$ python sweep.py 
+
+>>> Running ResNet-110 | Batch Size: 1
+##########################################################################
+Batch Size: 1
+Model: ./weights/v9-cifar10-resnet-110.pth
+Total Inference Time: 124.7149 sec
+Test Accuracy: 87.82%
+Misprediction Rate: 12.18%
+Average Inference Time: 0.0125 sec
+Average Memory Allocated: 15.02 MB
+Average Memory Reserved: 28.00 MB
+Average GPU Utilization: 99.02%
+Average Memory Usage: 3423.12 MB
+Average Peak Memory Allocated: 16.02 MB
+##########################################################################
+Finished ResNet-110 | Batch Size: 1
+-----------------------------------------------------
+
+>>> Running ResNet-110 | Batch Size: 2
+##########################################################################
+Batch Size: 2
+Model: ./weights/v9-cifar10-resnet-110.pth
+Total Inference Time: 62.0932 sec
+Test Accuracy: 87.82%
+Misprediction Rate: 12.18%
+Average Inference Time: 0.0124 sec
+Average Memory Allocated: 15.03 MB
+Average Memory Reserved: 28.00 MB
+Average GPU Utilization: 99.05%
+Average Memory Usage: 3423.12 MB
+Average Peak Memory Allocated: 16.03 MB
+##########################################################################
+Finished ResNet-110 | Batch Size: 2
+-----------------------------------------------------
+
+>>> Running ResNet-110 | Batch Size: 4
+##########################################################################
+Batch Size: 4
+Model: ./weights/v9-cifar10-resnet-110.pth
+Total Inference Time: 30.3803 sec
+Test Accuracy: 87.82%
+Misprediction Rate: 12.18%
+Average Inference Time: 0.0122 sec
+Average Memory Allocated: 15.05 MB
+Average Memory Reserved: 30.00 MB
+Average GPU Utilization: 97.95%
+Average Memory Usage: 3425.12 MB
+Average Peak Memory Allocated: 16.30 MB
+##########################################################################
+Finished ResNet-110 | Batch Size: 4
+-----------------------------------------------------
+
+>>> Running ResNet-110 | Batch Size: 8
+##########################################################################
+Batch Size: 8
+Model: ./weights/v9-cifar10-resnet-110.pth
+Total Inference Time: 15.4091 sec
+Test Accuracy: 87.82%
+Misprediction Rate: 12.18%
+Average Inference Time: 0.0123 sec
+Average Memory Allocated: 15.10 MB
+Average Memory Reserved: 30.00 MB
+Average GPU Utilization: 99.06%
+Average Memory Usage: 3425.12 MB
+Average Peak Memory Allocated: 17.60 MB
+##########################################################################
+Finished ResNet-110 | Batch Size: 8
+-----------------------------------------------------
+
+>>> Running ResNet-110 | Batch Size: 16
+##########################################################################
+Batch Size: 16
+Model: ./weights/v9-cifar10-resnet-110.pth
+Total Inference Time: 8.7866 sec
+Test Accuracy: 87.82%
+Misprediction Rate: 12.18%
+Average Inference Time: 0.0141 sec
+Average Memory Allocated: 15.20 MB
+Average Memory Reserved: 34.00 MB
+Average GPU Utilization: 98.86%
+Average Memory Usage: 3429.12 MB
+Average Peak Memory Allocated: 20.58 MB
+##########################################################################
+Finished ResNet-110 | Batch Size: 16
+-----------------------------------------------------
+
+>>> Running ResNet-110 | Batch Size: 32
+##########################################################################
+Batch Size: 32
+Model: ./weights/v9-cifar10-resnet-110.pth
+Total Inference Time: 4.2760 sec
+Test Accuracy: 87.82%
+Misprediction Rate: 12.18%
+Average Inference Time: 0.0137 sec
+Average Memory Allocated: 15.38 MB
+Average Memory Reserved: 32.01 MB
+Average GPU Utilization: 99.99%
+Average Memory Usage: 3427.13 MB
+Average Peak Memory Allocated: 25.36 MB
+##########################################################################
+Finished ResNet-110 | Batch Size: 32
+-----------------------------------------------------
+
+>>> Running ResNet-110 | Batch Size: 64
+##########################################################################
+Batch Size: 64
+Model: ./weights/v9-cifar10-resnet-110.pth
+Total Inference Time: 2.2955 sec
+Test Accuracy: 87.82%
+Misprediction Rate: 12.18%
+Average Inference Time: 0.0146 sec
+Average Memory Allocated: 15.76 MB
+Average Memory Reserved: 51.89 MB
+Average GPU Utilization: 100.00%
+Average Memory Usage: 3447.01 MB
+Average Peak Memory Allocated: 35.71 MB
+##########################################################################
+Finished ResNet-110 | Batch Size: 64
+-----------------------------------------------------
+
+>>> Running ResNet-110 | Batch Size: 128
+##########################################################################
+Batch Size: 128
+Model: ./weights/v9-cifar10-resnet-110.pth
+Total Inference Time: 1.2942 sec
+Test Accuracy: 87.82%
+Misprediction Rate: 12.18%
+Average Inference Time: 0.0164 sec
+Average Memory Allocated: 16.50 MB
+Average Memory Reserved: 68.08 MB
+Average GPU Utilization: 100.00%
+Average Memory Usage: 3463.20 MB
+Average Peak Memory Allocated: 56.41 MB
+##########################################################################
+Finished ResNet-110 | Batch Size: 128
+-----------------------------------------------------
+
+>>> Running ResNet-110 | Batch Size: 256
+##########################################################################
+Batch Size: 256
+Model: ./weights/v9-cifar10-resnet-110.pth
+Total Inference Time: 0.9090 sec
+Test Accuracy: 87.82%
+Misprediction Rate: 12.18%
+Average Inference Time: 0.0227 sec
+Average Memory Allocated: 17.95 MB
+Average Memory Reserved: 112.15 MB
+Average GPU Utilization: 100.00%
+Average Memory Usage: 3507.28 MB
+Average Peak Memory Allocated: 97.84 MB
+##########################################################################
+Finished ResNet-110 | Batch Size: 256
+-----------------------------------------------------
+
+>>> Running ResNet-110 | Batch Size: 512
+##########################################################################
+Batch Size: 512
+Model: ./weights/v9-cifar10-resnet-110.pth
+Total Inference Time: 0.8345 sec
+Test Accuracy: 87.82%
+Misprediction Rate: 12.18%
+Average Inference Time: 0.0417 sec
+Average Memory Allocated: 20.89 MB
+Average Memory Reserved: 228.00 MB
+Average GPU Utilization: 100.00%
+Average Memory Usage: 3623.12 MB
+Average Peak Memory Allocated: 180.63 MB
+##########################################################################
+Finished ResNet-110 | Batch Size: 512
+-----------------------------------------------------
+
+>>> Running ResNet-110 | Batch Size: 1024
+##########################################################################
+Batch Size: 1024
+Model: ./weights/v9-cifar10-resnet-110.pth
+Total Inference Time: 1.1476 sec
+Test Accuracy: 87.82%
+Misprediction Rate: 12.18%
+Average Inference Time: 0.1148 sec
+Average Memory Allocated: 26.78 MB
+Average Memory Reserved: 416.00 MB
+Average GPU Utilization: 99.90%
+Average Memory Usage: 3811.12 MB
+Average Peak Memory Allocated: 346.25 MB
+##########################################################################
+Finished ResNet-110 | Batch Size: 1024
+-----------------------------------------------------
+(.ml2) akash@victus:~/Desktop/ML-2/Basic-Image-Classification$ 

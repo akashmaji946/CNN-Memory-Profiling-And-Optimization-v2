@@ -1,0 +1,181 @@
+(.ml2) akash@victus:~/Desktop/ML-2/Basic-Image-Classification$ ./sc.sh 
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                | 0/2172 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [08:23<00:00,  4.32it/s]
+Epoch 1 / 1 | Train Loss: 6.8452 | Train Acc: 0.0048 | Time: 503.34s | Alloc: 71.37 MB | Reserved: 850.00 MB | Util: 100.00% | Mem Used: 1313.12 MB | Peak Alloc: 635.49 MB
+Training complete!
+##########################################################################
+Batch Size: 16
+Tile Size: 16
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-16-ts-16.pth
+Total Inference Time: 2.9618 sec
+Test Accuracy: 0.38%
+Misprediction Rate: 99.62%
+Average Inference Time: 0.0120 sec
+Average Memory Allocated: 80.59 MB
+Average Memory Reserved: 850.00 MB
+Average GPU Utilization: 91.93%
+Average Memory Usage: 1313.12 MB
+Average Peak Memory Allocated: 180.26 MB
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                | 0/2172 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [05:16<00:00,  6.87it/s]
+Epoch 1 / 1 | Train Loss: 6.8396 | Train Acc: 0.0041 | Time: 316.30s | Alloc: 69.84 MB | Reserved: 780.00 MB | Util: 100.00% | Mem Used: 1243.12 MB | Peak Alloc: 616.71 MB
+Training complete!
+##########################################################################
+Batch Size: 16
+Tile Size: 32
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-16-ts-32.pth
+Total Inference Time: 1.2189 sec
+Test Accuracy: 0.31%
+Misprediction Rate: 99.69%
+Average Inference Time: 0.0050 sec
+Average Memory Allocated: 79.06 MB
+Average Memory Reserved: 780.00 MB
+Average GPU Utilization: 91.34%
+Average Memory Usage: 1243.12 MB
+Average Peak Memory Allocated: 178.73 MB
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                | 0/2172 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2172/2172 [04:17<00:00,  8.43it/s]
+Epoch 1 / 1 | Train Loss: 6.8513 | Train Acc: 0.0036 | Time: 257.67s | Alloc: 70.58 MB | Reserved: 720.00 MB | Util: 99.00% | Mem Used: 1183.12 MB | Peak Alloc: 612.59 MB
+Training complete!
+##########################################################################
+Batch Size: 16
+Tile Size: 64
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-16-ts-64.pth
+Total Inference Time: 0.7695 sec
+Test Accuracy: 0.23%
+Misprediction Rate: 99.77%
+Average Inference Time: 0.0031 sec
+Average Memory Allocated: 79.80 MB
+Average Memory Reserved: 720.00 MB
+Average GPU Utilization: 90.82%
+Average Memory Usage: 1183.12 MB
+Average Peak Memory Allocated: 244.24 MB
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                | 0/1086 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [08:06<00:00,  2.23it/s]
+Epoch 1 / 1 | Train Loss: 6.8433 | Train Acc: 0.0042 | Time: 486.49s | Alloc: 71.51 MB | Reserved: 1562.00 MB | Util: 100.00% | Mem Used: 2025.12 MB | Peak Alloc: 1188.73 MB
+Training complete!
+##########################################################################
+Batch Size: 32
+Tile Size: 16
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-32-ts-16.pth
+Total Inference Time: 1.4829 sec
+Test Accuracy: 0.54%
+Misprediction Rate: 99.46%
+Average Inference Time: 0.0121 sec
+Average Memory Allocated: 89.95 MB
+Average Memory Reserved: 1562.00 MB
+Average GPU Utilization: 91.93%
+Average Memory Usage: 2025.12 MB
+Average Peak Memory Allocated: 285.30 MB
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                | 0/1086 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [05:09<00:00,  3.51it/s]
+Epoch 1 / 1 | Train Loss: 6.8416 | Train Acc: 0.0048 | Time: 309.63s | Alloc: 70.77 MB | Reserved: 1516.00 MB | Util: 99.00% | Mem Used: 1979.12 MB | Peak Alloc: 1149.54 MB
+Training complete!
+##########################################################################
+Batch Size: 32
+Tile Size: 32
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-32-ts-32.pth
+Total Inference Time: 0.6146 sec
+Test Accuracy: 0.28%
+Misprediction Rate: 99.72%
+Average Inference Time: 0.0050 sec
+Average Memory Allocated: 89.21 MB
+Average Memory Reserved: 1516.00 MB
+Average GPU Utilization: 90.99%
+Average Memory Usage: 1979.12 MB
+Average Peak Memory Allocated: 284.56 MB
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                | 0/1086 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1086/1086 [04:13<00:00,  4.28it/s]
+Epoch 1 / 1 | Train Loss: 6.8518 | Train Acc: 0.0039 | Time: 253.66s | Alloc: 72.08 MB | Reserved: 1356.00 MB | Util: 99.00% | Mem Used: 1819.12 MB | Peak Alloc: 1136.57 MB
+Training complete!
+##########################################################################
+Batch Size: 32
+Tile Size: 64
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-32-ts-64.pth
+Total Inference Time: 0.3875 sec
+Test Accuracy: 0.41%
+Misprediction Rate: 99.59%
+Average Inference Time: 0.0032 sec
+Average Memory Allocated: 90.52 MB
+Average Memory Reserved: 1356.00 MB
+Average GPU Utilization: 91.25%
+Average Memory Usage: 1819.12 MB
+Average Peak Memory Allocated: 418.84 MB
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                 | 0/543 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [07:54<00:00,  1.14it/s]
+Epoch 1 / 1 | Train Loss: 6.8610 | Train Acc: 0.0044 | Time: 474.95s | Alloc: 73.50 MB | Reserved: 2934.00 MB | Util: 100.00% | Mem Used: 3399.12 MB | Peak Alloc: 2280.79 MB
+Training complete!
+##########################################################################
+Batch Size: 64
+Tile Size: 16
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-64-ts-16.pth
+Total Inference Time: 0.7450 sec
+Test Accuracy: 0.38%
+Misprediction Rate: 99.62%
+Average Inference Time: 0.0120 sec
+Average Memory Allocated: 110.08 MB
+Average Memory Reserved: 2934.00 MB
+Average GPU Utilization: 92.66%
+Average Memory Usage: 3399.12 MB
+Average Peak Memory Allocated: 497.63 MB
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                 | 0/543 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [05:04<00:00,  1.78it/s]
+Epoch 1 / 1 | Train Loss: 6.8574 | Train Acc: 0.0045 | Time: 305.04s | Alloc: 70.37 MB | Reserved: 2858.00 MB | Util: 100.00% | Mem Used: 3323.12 MB | Peak Alloc: 2215.60 MB
+Training complete!
+##########################################################################
+Batch Size: 64
+Tile Size: 32
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-64-ts-32.pth
+Total Inference Time: 0.3237 sec
+Test Accuracy: 0.46%
+Misprediction Rate: 99.54%
+Average Inference Time: 0.0052 sec
+Average Memory Allocated: 106.94 MB
+Average Memory Reserved: 2858.00 MB
+Average GPU Utilization: 91.66%
+Average Memory Usage: 3323.12 MB
+Average Peak Memory Allocated: 494.49 MB
+Model Parameters Count: 4589928
+Training...
+  0%|                                                                                                                                 | 0/543 [00:00<?, ?it/s]/home/akash/Desktop/ML-2/.ml2/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 543/543 [04:10<00:00,  2.17it/s]
+Epoch 1 / 1 | Train Loss: 6.8674 | Train Acc: 0.0041 | Time: 250.70s | Alloc: 70.73 MB | Reserved: 2392.00 MB | Util: 100.00% | Mem Used: 2857.12 MB | Peak Alloc: 2191.04 MB
+Training complete!
+##########################################################################
+Batch Size: 64
+Tile Size: 64
+Model: ./weights-imagenet/00-imagenet-resnet-tile-20-bs-64-ts-64.pth
+Total Inference Time: 0.2024 sec
+Test Accuracy: 0.56%
+Misprediction Rate: 99.44%
+Average Inference Time: 0.0033 sec
+Average Memory Allocated: 107.30 MB
+Average Memory Reserved: 2392.00 MB
+Average GPU Utilization: 91.10%
+Average Memory Usage: 2857.12 MB
+Average Peak Memory Allocated: 756.69 MB

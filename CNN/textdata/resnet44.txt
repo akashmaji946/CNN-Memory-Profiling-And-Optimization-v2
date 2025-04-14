@@ -1,0 +1,268 @@
+Collecting data...
+##########################################################################
+Batch Size: 1
+Model: ./weights/v9-cifar10-resnet-44.pth
+Total Inference Time: 52.6614 sec
+Test Accuracy: 87.19%
+Misprediction Rate: 12.81%
+Average Inference Time: 0.0053 sec
+Average Memory Allocated: 10.77 MB
+Average Memory Reserved: 24.00 MB
+Average GPU Utilization: 17.70%
+Average Memory Usage: 505.12 MB
+Average Peak Memory Allocated: 11.77 MB
+##########################################################################
+Generating '/tmp/nsys-report-7764.qdstrm'
+[1/1] [========================100%] v9-cifar10-resnet-44_bs1.nsys-rep
+Generated:
+    /home/akash/Desktop/ML-2/Basic-Image-Classification/profiles/v9-cifar10-resnet-44_bs1.nsys-rep
+> Profiling v9-cifar10-resnet-44 with batch size 2...
+WARNING: CPU IP/backtrace sampling not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+WARNING: CPU context switch tracing not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+Collecting data...
+##########################################################################
+Batch Size: 2
+Model: ./weights/v9-cifar10-resnet-44.pth
+Total Inference Time: 26.5153 sec
+Test Accuracy: 87.19%
+Misprediction Rate: 12.81%
+Average Inference Time: 0.0053 sec
+Average Memory Allocated: 10.78 MB
+Average Memory Reserved: 24.00 MB
+Average GPU Utilization: 19.39%
+Average Memory Usage: 505.12 MB
+Average Peak Memory Allocated: 11.78 MB
+##########################################################################
+Generating '/tmp/nsys-report-f86c.qdstrm'
+[1/1] [========================100%] v9-cifar10-resnet-44_bs2.nsys-rep
+Generated:
+    /home/akash/Desktop/ML-2/Basic-Image-Classification/profiles/v9-cifar10-resnet-44_bs2.nsys-rep
+> Profiling v9-cifar10-resnet-44 with batch size 4...
+WARNING: CPU IP/backtrace sampling not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+WARNING: CPU context switch tracing not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+Collecting data...
+##########################################################################
+Batch Size: 4
+Model: ./weights/v9-cifar10-resnet-44.pth
+Total Inference Time: 13.3867 sec
+Test Accuracy: 87.19%
+Misprediction Rate: 12.81%
+Average Inference Time: 0.0054 sec
+Average Memory Allocated: 10.80 MB
+Average Memory Reserved: 24.00 MB
+Average GPU Utilization: 22.65%
+Average Memory Usage: 505.12 MB
+Average Peak Memory Allocated: 12.05 MB
+##########################################################################
+Generating '/tmp/nsys-report-2d1c.qdstrm'
+[1/1] [========================100%] v9-cifar10-resnet-44_bs4.nsys-rep
+Generated:
+    /home/akash/Desktop/ML-2/Basic-Image-Classification/profiles/v9-cifar10-resnet-44_bs4.nsys-rep
+> Profiling v9-cifar10-resnet-44 with batch size 8...
+WARNING: CPU IP/backtrace sampling not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+WARNING: CPU context switch tracing not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+Collecting data...
+##########################################################################
+Batch Size: 8
+Model: ./weights/v9-cifar10-resnet-44.pth
+Total Inference Time: 6.7381 sec
+Test Accuracy: 87.19%
+Misprediction Rate: 12.81%
+Average Inference Time: 0.0054 sec
+Average Memory Allocated: 10.85 MB
+Average Memory Reserved: 26.00 MB
+Average GPU Utilization: 32.12%
+Average Memory Usage: 507.12 MB
+Average Peak Memory Allocated: 13.35 MB
+##########################################################################
+Generating '/tmp/nsys-report-b739.qdstrm'
+[1/1] [========================100%] v9-cifar10-resnet-44_bs8.nsys-rep
+Generated:
+    /home/akash/Desktop/ML-2/Basic-Image-Classification/profiles/v9-cifar10-resnet-44_bs8.nsys-rep
+> Profiling v9-cifar10-resnet-44 with batch size 16...
+WARNING: CPU IP/backtrace sampling not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+WARNING: CPU context switch tracing not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+Collecting data...
+##########################################################################
+Batch Size: 16
+Model: ./weights/v9-cifar10-resnet-44.pth
+Total Inference Time: 3.7619 sec
+Test Accuracy: 87.19%
+Misprediction Rate: 12.81%
+Average Inference Time: 0.0060 sec
+Average Memory Allocated: 10.94 MB
+Average Memory Reserved: 28.00 MB
+Average GPU Utilization: 32.67%
+Average Memory Usage: 509.12 MB
+Average Peak Memory Allocated: 16.33 MB
+##########################################################################
+Generating '/tmp/nsys-report-9a54.qdstrm'
+[1/1] [========================100%] v9-cifar10-resnet-44_bs16.nsys-rep
+Generated:
+    /home/akash/Desktop/ML-2/Basic-Image-Classification/profiles/v9-cifar10-resnet-44_bs16.nsys-rep
+> Profiling v9-cifar10-resnet-44 with batch size 32...
+WARNING: CPU IP/backtrace sampling not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+WARNING: CPU context switch tracing not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+Collecting data...
+##########################################################################
+Batch Size: 32
+Model: ./weights/v9-cifar10-resnet-44.pth
+Total Inference Time: 1.9025 sec
+Test Accuracy: 87.19%
+Misprediction Rate: 12.81%
+Average Inference Time: 0.0061 sec
+Average Memory Allocated: 11.13 MB
+Average Memory Reserved: 28.00 MB
+Average GPU Utilization: 40.65%
+Average Memory Usage: 509.12 MB
+Average Peak Memory Allocated: 21.10 MB
+##########################################################################
+Generating '/tmp/nsys-report-0328.qdstrm'
+[1/1] [========================100%] v9-cifar10-resnet-44_bs32.nsys-rep
+Generated:
+    /home/akash/Desktop/ML-2/Basic-Image-Classification/profiles/v9-cifar10-resnet-44_bs32.nsys-rep
+> Profiling v9-cifar10-resnet-44 with batch size 64...
+WARNING: CPU IP/backtrace sampling not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+WARNING: CPU context switch tracing not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+Collecting data...
+##########################################################################
+Batch Size: 64
+Model: ./weights/v9-cifar10-resnet-44.pth
+Total Inference Time: 1.0051 sec
+Test Accuracy: 87.19%
+Misprediction Rate: 12.81%
+Average Inference Time: 0.0064 sec
+Average Memory Allocated: 11.50 MB
+Average Memory Reserved: 47.87 MB
+Average GPU Utilization: 40.04%
+Average Memory Usage: 529.00 MB
+Average Peak Memory Allocated: 31.45 MB
+##########################################################################
+Generating '/tmp/nsys-report-2e80.qdstrm'
+[1/1] [========================100%] v9-cifar10-resnet-44_bs64.nsys-rep
+Generated:
+    /home/akash/Desktop/ML-2/Basic-Image-Classification/profiles/v9-cifar10-resnet-44_bs64.nsys-rep
+> Profiling v9-cifar10-resnet-44 with batch size 128...
+WARNING: CPU IP/backtrace sampling not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+WARNING: CPU context switch tracing not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+Collecting data...
+##########################################################################
+Batch Size: 128
+Model: ./weights/v9-cifar10-resnet-44.pth
+Total Inference Time: 0.5811 sec
+Test Accuracy: 87.19%
+Misprediction Rate: 12.81%
+Average Inference Time: 0.0074 sec
+Average Memory Allocated: 12.24 MB
+Average Memory Reserved: 64.05 MB
+Average GPU Utilization: 39.73%
+Average Memory Usage: 545.18 MB
+Average Peak Memory Allocated: 52.16 MB
+##########################################################################
+Generating '/tmp/nsys-report-1de2.qdstrm'
+[1/1] [========================100%] v9-cifar10-resnet-44_bs128.nsys-rep
+Generated:
+    /home/akash/Desktop/ML-2/Basic-Image-Classification/profiles/v9-cifar10-resnet-44_bs128.nsys-rep
+> Profiling v9-cifar10-resnet-44 with batch size 256...
+WARNING: CPU IP/backtrace sampling not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+WARNING: CPU context switch tracing not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+Collecting data...
+##########################################################################
+Batch Size: 256
+Model: ./weights/v9-cifar10-resnet-44.pth
+Total Inference Time: 0.3971 sec
+Test Accuracy: 87.19%
+Misprediction Rate: 12.81%
+Average Inference Time: 0.0099 sec
+Average Memory Allocated: 13.70 MB
+Average Memory Reserved: 108.10 MB
+Average GPU Utilization: 40.20%
+Average Memory Usage: 589.23 MB
+Average Peak Memory Allocated: 93.59 MB
+##########################################################################
+Generating '/tmp/nsys-report-434d.qdstrm'
+[1/1] [========================100%] v9-cifar10-resnet-44_bs256.nsys-rep
+Generated:
+    /home/akash/Desktop/ML-2/Basic-Image-Classification/profiles/v9-cifar10-resnet-44_bs256.nsys-rep
+> Profiling v9-cifar10-resnet-44 with batch size 512...
+WARNING: CPU IP/backtrace sampling not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+WARNING: CPU context switch tracing not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+Collecting data...
+##########################################################################
+Batch Size: 512
+Model: ./weights/v9-cifar10-resnet-44.pth
+Total Inference Time: 0.2984 sec
+Test Accuracy: 87.19%
+Misprediction Rate: 12.81%
+Average Inference Time: 0.0149 sec
+Average Memory Allocated: 16.64 MB
+Average Memory Reserved: 222.00 MB
+Average GPU Utilization: 42.25%
+Average Memory Usage: 703.12 MB
+Average Peak Memory Allocated: 176.37 MB
+##########################################################################
+Generating '/tmp/nsys-report-fcef.qdstrm'
+[1/1] [========================100%] v9-cifar10-resnet-44_bs512.nsys-rep
+Generated:
+    /home/akash/Desktop/ML-2/Basic-Image-Classification/profiles/v9-cifar10-resnet-44_bs512.nsys-rep
+> Profiling v9-cifar10-resnet-44 with batch size 1024...
+WARNING: CPU IP/backtrace sampling not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+WARNING: CPU context switch tracing not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+Collecting data...
+##########################################################################
+Batch Size: 1024
+Model: ./weights/v9-cifar10-resnet-44.pth
+Total Inference Time: 0.3256 sec
+Test Accuracy: 87.19%
+Misprediction Rate: 12.81%
+Average Inference Time: 0.0326 sec
+Average Memory Allocated: 22.53 MB
+Average Memory Reserved: 410.00 MB
+Average GPU Utilization: 44.00%
+Average Memory Usage: 891.12 MB
+Average Peak Memory Allocated: 341.99 MB
+##########################################################################
+Generating '/tmp/nsys-report-b1ac.qdstrm'
+[1/1] [========================100%] v9-cifar10-resnet-44_bs1024.nsys-rep
+Generated:
+    /home/akash/Desktop/ML-2/Basic-Image-Classification/profiles/v9-cifar10-resnet-44_bs1024.nsys-rep

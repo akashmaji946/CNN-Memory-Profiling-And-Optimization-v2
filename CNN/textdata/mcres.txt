@@ -1,0 +1,125 @@
+Infer3
+##########################################################################
+Batch Size: 1024
+Model: /content/drive/MyDrive/ML-2/Basic-Image-Classification/weights/v9-cifar10-resnet-20.pth
+Total Inference Time: 0.0374 sec
+Test Accuracy: 84.67%
+Misprediction Rate: 15.33%
+Average Inference Time: 0.0037 sec
+Average Memory Allocated: 20.98 MB
+Average Memory Reserved: 396.00 MB
+Average GPU Utilization: 16.00%
+Average Memory Usage: 795.88 MB
+Average Peak Memory Allocated: 341.26 MB
+
+Infer4
+<ipython-input-8-f6406cca2e37>:433: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+##########################################################################
+Batch Size: 1024
+Model: /content/drive/MyDrive/ML-2/Basic-Image-Classification/weights/v9-cifar10-resnet-20.pth
+Total Inference Time: 0.0430 sec
+Test Accuracy: 84.67%
+Misprediction Rate: 15.33%
+Average Inference Time: 0.0043 sec
+Average Memory Allocated: 20.96 MB
+Average Memory Reserved: 396.00 MB
+Average GPU Utilization: 11.10%
+Average Memory Usage: 795.88 MB
+Average Peak Memory Allocated: 181.27 MB
+##########################################################################
+
+Infer3
+##########################################################################
+Batch Size: 1024
+Model: /content/drive/MyDrive/ML-2/Basic-Image-Classification/weights/v9-cifar10-resnet-32.pth
+Total Inference Time: 0.0565 sec
+Test Accuracy: 86.45%
+Misprediction Rate: 13.55%
+Average Inference Time: 0.0057 sec
+Average Memory Allocated: 21.75 MB
+Average Memory Reserved: 396.00 MB
+Average GPU Utilization: 13.60%
+Average Memory Usage: 795.88 MB
+Average Peak Memory Allocated: 342.03 MB
+
+
+Infer4
+<ipython-input-12-87d79b0a3cfc>:433: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+##########################################################################
+Batch Size: 1024
+Model: /content/drive/MyDrive/ML-2/Basic-Image-Classification/weights/v9-cifar10-resnet-32.pth
+Total Inference Time: 0.0571 sec
+Test Accuracy: 86.46%
+Misprediction Rate: 13.54%
+Average Inference Time: 0.0057 sec
+Average Memory Allocated: 21.73 MB
+Average Memory Reserved: 396.00 MB
+Average GPU Utilization: 19.30%
+Average Memory Usage: 795.88 MB
+Average Peak Memory Allocated: 182.06 MB
+##########################################################################
+
+Infer3
+##########################################################################
+Batch Size: 1024
+Model: /content/drive/MyDrive/ML-2/Basic-Image-Classification/weights/v9-cifar10-resnet-44.pth
+Total Inference Time: 0.0646 sec
+Test Accuracy: 87.19%
+Misprediction Rate: 12.81%
+Average Inference Time: 0.0065 sec
+Average Memory Allocated: 22.53 MB
+Average Memory Reserved: 396.00 MB
+Average GPU Utilization: 27.60%
+Average Memory Usage: 795.88 MB
+Average Peak Memory Allocated: 342.81 MB
+##########################################################################
+
+Infer4
+<ipython-input-14-2d0565b96306>:433: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+##########################################################################
+Batch Size: 1024
+Model: /content/drive/MyDrive/ML-2/Basic-Image-Classification/weights/v9-cifar10-resnet-44.pth
+Total Inference Time: 0.0908 sec
+Test Accuracy: 87.19%
+Misprediction Rate: 12.81%
+Average Inference Time: 0.0091 sec
+Average Memory Allocated: 22.51 MB
+Average Memory Reserved: 396.00 MB
+Average GPU Utilization: 16.60%
+Average Memory Usage: 795.88 MB
+Average Peak Memory Allocated: 182.86 MB
+
+Infer3
+##########################################################################
+Batch Size: 1024
+Model: /content/drive/MyDrive/ML-2/Basic-Image-Classification/weights/v9-cifar10-resnet-56.pth
+Total Inference Time: 0.0757 sec
+Test Accuracy: 87.34%
+Misprediction Rate: 12.66%
+Average Inference Time: 0.0076 sec
+Average Memory Allocated: 23.30 MB
+Average Memory Reserved: 396.00 MB
+Average GPU Utilization: 20.00%
+Average Memory Usage: 795.88 MB
+Average Peak Memory Allocated: 343.58 MB
+##########################################################################
+
+Infer4
+<ipython-input-17-dec0b151185b>:433: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+##########################################################################
+Batch Size: 1024
+Model: /content/drive/MyDrive/ML-2/Basic-Image-Classification/weights/v9-cifar10-resnet-56.pth
+Total Inference Time: 0.1094 sec
+Test Accuracy: 87.33%
+Misprediction Rate: 12.67%
+Average Inference Time: 0.0109 sec
+Average Memory Allocated: 23.28 MB
+Average Memory Reserved: 398.00 MB
+Average GPU Utilization: 20.20%
+Average Memory Usage: 797.88 MB
+Average Peak Memory Allocated: 183.65 MB
+##########################################################################
