@@ -7,7 +7,7 @@ nsys
 projects
 *.nvs
 profile*
-weights*
+weights-imagenet
 RESULTS*
 
 
